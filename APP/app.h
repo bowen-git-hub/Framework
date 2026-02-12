@@ -6,6 +6,7 @@
 
 void app_init(void);
 void app_loop(void);
+void app_debug(void);
 
 
 #endif /* APP_H */

@@ -45,7 +45,7 @@ build/main.o: Core/Src/main.c Core/Inc/main.h \
  Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
  Core/Inc/adc.h Core/Inc/main.h Core/Inc/can.h Core/Inc/dma.h \
  Core/Inc/i2c.h Core/Inc/spi.h Core/Inc/tim.h Core/Inc/usart.h \
- Core/Inc/gpio.h
+ Core/Inc/gpio.h APP/app.h hal_bsp/hal/hal.h hal_bsp/bsp/bsp.h
 Core/Inc/main.h:
 Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 Core/Inc/stm32f4xx_hal_conf.h:
@@ -102,3 +102,6 @@ Core/Inc/spi.h:
 Core/Inc/tim.h:
 Core/Inc/usart.h:
 Core/Inc/gpio.h:
+APP/app.h:
+hal_bsp/hal/hal.h:
+hal_bsp/bsp/bsp.h:

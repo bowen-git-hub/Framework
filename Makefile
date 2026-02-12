@@ -70,9 +70,6 @@ Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c \
 Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c \
 Core/Src/sysmem.c \
 Core/Src/syscalls.c \
-APP/app.c \
-hal_bsp/hal/hal.c \
-hal_bsp/bsp/bsp.c \
 Core/Src/usart.c \
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c \
 Core/Src/dma.c \
@@ -89,6 +86,13 @@ Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c \
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c \
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c
 
+C_SOURCES +=  \
+APP/app.c \
+hal_bsp/hal/hal.c \
+hal_bsp/bsp/bsp.c \
+APP/robot_cmd.c \
+hal_bsp/hal/driver/spi_oled/ax_oled_1305.c \
+hal_bsp/hal/driver/remote/sbus_ht10a.c
 
 
 # ASM sources
@@ -158,9 +162,14 @@ C_INCLUDES =  \
 -IMiddlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F \
 -IDrivers/CMSIS/Device/ST/STM32F4xx/Include \
 -IDrivers/CMSIS/Include \
+
+
+C_INCLUDES +=  \
 -IAPP \
 -Ihal_bsp/hal \
--Ihal_bsp/bsp
+-Ihal_bsp/bsp \
+-Ihal_bsp/hal/driver/spi_oled \
+-Ihal_bsp/hal/driver/remote
 
 
 # compile gcc flags

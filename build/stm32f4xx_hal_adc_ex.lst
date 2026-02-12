@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
   28:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****              (+++) Enable the clock for the ADC GPIOs using the following function:
   29:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****                    __HAL_RCC_GPIOx_CLK_ENABLE()
   30:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****              (+++) Configure these ADC pins in analog mode using HAL_GPIO_Init()
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 2
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 2
 
 
   31:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****        (##) In case of using interrupts (e.g. HAL_ADC_Start_IT())
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
   85:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** /* Includes ------------------------------------------------------------------*/
   86:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** #include "stm32f4xx_hal.h"
   87:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** 
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 3
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 3
 
 
   88:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** /** @addtogroup STM32F4xx_HAL_Driver
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  142:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   * @param  hadc pointer to a ADC_HandleTypeDef structure that contains
  143:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   *         the configuration information for the specified ADC.
  144:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   * @retval HAL status
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 4
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 4
 
 
  145:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  199:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****     /* (To ensure of no unknown state from potential previous ADC operations) */
  200:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****     __HAL_ADC_CLEAR_FLAG(hadc, ADC_FLAG_JEOC);
  201:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** 
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 5
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 5
 
 
  202:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****     /* Pointer to the common control register to which is belonging hadc    */
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  256:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   __HAL_LOCK(hadc);
  257:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** 
  258:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   /* Enable the ADC peripheral */
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 6
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 6
 
 
  259:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  313:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****     /* Check if Multimode enabled */
  314:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****     if (HAL_IS_BIT_CLR(tmpADC_Common->CCR, ADC_CCR_MULTI))
  315:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****     {
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 7
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 7
 
 
  316:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****       tmp1 = HAL_IS_BIT_CLR(hadc->Instance->CR2, ADC_CR2_JEXTEN);
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  370:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   /* Stop potential conversion and disable ADC peripheral                     */
  371:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   /* Conditioned to:                                                          */
  372:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   /* - No conversion on the other group (regular group) is intended to        */
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 8
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 8
 
 
  373:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   /*   continue (injected and regular groups stop conversion and ADC disable  */
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  427:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****       if ((Timeout == 0U) || ((HAL_GetTick() - tickstart) > Timeout))
  428:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****       {
  429:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****         /* New check to avoid false timeout detection in case of preemption */
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 9
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 9
 
 
  430:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****         if (!(__HAL_ADC_GET_FLAG(hadc, ADC_FLAG_JEOC)))
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  484:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   */
  485:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** HAL_StatusTypeDef HAL_ADCEx_InjectedStop_IT(ADC_HandleTypeDef *hadc)
  486:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** {
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 10
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 10
 
 
  487:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   HAL_StatusTypeDef tmp_hal_status = HAL_OK;
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  541:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   *            @arg ADC_INJECTED_RANK_1: Injected Channel1 selected
  542:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   *            @arg ADC_INJECTED_RANK_2: Injected Channel2 selected
  543:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   *            @arg ADC_INJECTED_RANK_3: Injected Channel3 selected
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 11
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 11
 
 
  544:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   *            @arg ADC_INJECTED_RANK_4: Injected Channel4 selected
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  598:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** HAL_StatusTypeDef HAL_ADCEx_MultiModeStart_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t L
  599:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** {
  600:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   __IO uint32_t counter = 0U;
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 12
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 12
 
 
  601:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   ADC_Common_TypeDef *tmpADC_Common;
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  655:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** 
  656:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****     /* Process unlocked */
  657:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****     /* Unlock before starting ADC conversions: in case of potential           */
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 13
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 13
 
 
  658:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****     /* interruption, to let the process to ADC IRQ Handler.                   */
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  712:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****     SET_BIT(hadc->ErrorCode, HAL_ADC_ERROR_INTERNAL);
  713:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   }
  714:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** 
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 14
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 14
 
 
  715:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   /* Return function status */
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  769:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** }
  770:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** 
  771:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** /**
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 15
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 15
 
 
  772:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   * @brief  Returns the last ADC1, ADC2 and ADC3 regular conversions results
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  826:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** 
  827:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   /* Check the parameters */
  828:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   assert_param(IS_ADC_CHANNEL(sConfigInjected->InjectedChannel));
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 16
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 16
 
 
  829:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   assert_param(IS_ADC_INJECTED_RANK(sConfigInjected->InjectedRank));
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  883:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   /*       software start.                                                  */
  884:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   if (sConfigInjected->ExternalTrigInjecConv != ADC_INJECTED_SOFTWARE_START)
  885:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   {
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 17
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 17
 
 
  886:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****     /* Select external trigger to start conversion */
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  940:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****     default:
  941:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****       /* Set injected channel 4 offset */
  942:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****       hadc->Instance->JOFR4 &= ~(ADC_JOFR4_JOFFSET4);
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 18
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 18
 
 
  943:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****       hadc->Instance->JOFR4 |= sConfigInjected->InjectedOffset;
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  997:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   tmpADC_Common = ADC_COMMON_REGISTER(hadc);
  998:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** 
  999:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   /* Set ADC mode */
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 19
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 19
 
 
 1000:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   tmpADC_Common->CCR &= ~(ADC_CCR_MULTI);
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
 1054:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****       __HAL_ADC_DISABLE_IT(hadc, ADC_IT_EOC);
 1055:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** 
 1056:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****       /* Set ADC state */
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 20
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 20
 
 
 1057:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****       CLEAR_BIT(hadc->State, HAL_ADC_STATE_REG_BUSY);
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
 1097:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   hadc->State = HAL_ADC_STATE_ERROR_DMA;
   43              		.loc 1 1097 3 is_stmt 1 view .LVU4
   44              		.loc 1 1097 15 is_stmt 0 view .LVU5
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 21
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 21
 
 
   45 0004 4023     		movs	r3, #64
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
   92              		.section	.text.ADC_MultiModeDMAConvCplt,"ax",%progbits
   93              		.align	1
   94              		.syntax unified
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 22
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 22
 
 
   95              		.thumb
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  136              		.loc 1 1047 10 view .LVU29
  137 0022 D16A     		ldr	r1, [r2, #44]
 1046:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****         (HAL_IS_BIT_CLR(hadc->Instance->SQR1, ADC_SQR1_L) ||
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 23
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 23
 
 
  138              		.loc 1 1046 63 view .LVU30
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  179 005a 9B6B     		ldr	r3, [r3, #56]
  180              	.LVL12:
 1071:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   }
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 24
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 24
 
 
  181              		.loc 1 1071 21 view .LVU44
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  225              		.loc 1 153 3 discriminator 2 view .LVU56
  159:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   {
  226              		.loc 1 159 3 discriminator 2 view .LVU57
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 25
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 25
 
 
  159:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   {
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  174:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   {
  266              		.loc 1 174 3 is_stmt 1 view .LVU73
  174:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   {
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 26
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 26
 
 
  267              		.loc 1 174 7 is_stmt 0 view .LVU74
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  306              		.loc 1 210 7 is_stmt 1 view .LVU89
  210:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****       tmp2 = HAL_IS_BIT_CLR(hadc->Instance->CR1, ADC_CR1_JAUTO);
  307              		.loc 1 210 14 is_stmt 0 view .LVU90
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 27
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 27
 
 
  308 0082 0268     		ldr	r2, [r0]
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  347              		.loc 1 222 7 is_stmt 1 view .LVU105
  222:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****       {
  348              		.loc 1 222 10 is_stmt 0 view .LVU106
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 28
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 28
 
 
  349 00ae 1448     		ldr	r0, .L27+12
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  391              		@ sp needed
  392 00dc 7047     		bx	lr
  393              	.LVL28:
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 29
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 29
 
 
  394              	.L19:
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  443              	.LFB240:
  250:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   __IO uint32_t counter = 0U;
  444              		.loc 1 250 1 is_stmt 1 view -0
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 30
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 30
 
 
  445              		.cfi_startproc
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  483 0026 354B     		ldr	r3, .L45
  484 0028 1B68     		ldr	r3, [r3]
  485 002a 354A     		ldr	r2, .L45+4
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 31
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 31
 
 
  486 002c A2FB0323 		umull	r2, r3, r2, r3
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  290:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****     {
  525              		.loc 1 290 8 view .LVU158
  526 0062 13F4807F 		tst	r3, #256
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 32
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 32
 
 
  527 0066 01D1     		bne	.L35
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  565              		.loc 1 318 10 is_stmt 0 view .LVU174
  566 0096 11F4401F 		tst	r1, #3145728
  567 009a 27D1     		bne	.L38
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 33
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 33
 
 
  318:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****       {
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  607 00c2 BAB9     		cbnz	r2, .L41
  328:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****       {
  608              		.loc 1 328 44 discriminator 2 view .LVU190
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 34
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 34
 
 
  609 00c4 C1B9     		cbnz	r1, .L42
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  652              		.loc 1 345 10 view .LVU201
  653 00ec 0020     		movs	r0, #0
  654              	.LVL52:
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 35
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 35
 
 
  345:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** }
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  702              		.loc 1 368 3 view .LVU210
  368:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** 
  703              		.loc 1 368 3 view .LVU211
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 36
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 36
 
 
  704 0002 90F83C20 		ldrb	r2, [r0, #60]	@ zero_extendqisi2
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  744 0046 04E0     		b	.L50
  745              	.LVL59:
  746              	.L49:
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 37
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 37
 
 
  395:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** 
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  791              	.LFB242:
  415:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   uint32_t tickstart = 0U;
  792              		.loc 1 415 1 is_stmt 1 view -0
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 38
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 38
 
 
  793              		.cfi_startproc
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  430:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****         {
  833              		.loc 1 430 15 is_stmt 0 view .LVU253
  834 001e 2368     		ldr	r3, [r4]
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 39
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 39
 
 
  835 0020 1B68     		ldr	r3, [r3]
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  453:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****       (HAL_IS_BIT_CLR(hadc->Instance->JSQR, ADC_JSQR_JL)  ||
  874              		.loc 1 453 6 view .LVU269
  875 0054 12F4401F 		tst	r2, #3145728
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 40
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 40
 
 
  876 0058 1ED1     		bne	.L61
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  915 0094 2364     		str	r3, [r4, #64]
  916 0096 00E0     		b	.L58
  917              	.L61:
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 41
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 41
 
 
  470:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** }
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  964 0006 012A     		cmp	r2, #1
  965 0008 2DD0     		beq	.L73
  493:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** 
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 42
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 42
 
 
  966              		.loc 1 493 3 discriminator 2 view .LVU295
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  1006              		.loc 1 487 21 view .LVU309
  1007 004e 04E0     		b	.L72
  1008              	.LVL75:
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 43
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 43
 
 
  1009              	.L71:
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  1053              	.LVL82:
  1054              	.LFB244:
  548:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   __IO uint32_t tmp = 0U;
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 44
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 44
 
 
  1055              		.loc 1 548 1 is_stmt 1 view -0
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  1096              		.loc 1 584 3 view .LVU335
  584:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** }
  1097              		.loc 1 584 10 is_stmt 0 view .LVU336
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 45
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 45
 
 
  1098 0022 0198     		ldr	r0, [sp, #4]
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  1137 003c 0193     		str	r3, [sp, #4]
  580:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****     default:
  1138              		.loc 1 580 5 is_stmt 1 view .LVU352
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 46
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 46
 
 
  1139 003e F0E7     		b	.L76
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  1183 0010 7BD0     		beq	.L94
  1184 0012 0446     		mov	r4, r0
  609:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** 
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 47
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 47
 
 
  1185              		.loc 1 609 3 discriminator 2 view .LVU365
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  621:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****     {
  1224              		.loc 1 621 20 is_stmt 0 view .LVU381
  1225 0046 0198     		ldr	r0, [sp, #4]
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 48
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 48
 
 
  621:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****     {
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  1266              		.loc 1 659 5 view .LVU395
  659:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** 
  1267              		.loc 1 659 5 view .LVU396
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 49
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 49
 
 
  1268 008a 0022     		movs	r2, #0
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  1305              		.loc 1 688 7 is_stmt 1 view .LVU413
  688:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****     }
  1306              		.loc 1 688 26 is_stmt 0 view .LVU414
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 50
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 50
 
 
  1307 00ba 1A48     		ldr	r0, .L96+20
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  1349 00f2 E7E7     		b	.L93
  1350              	.LVL95:
  1351              	.L88:
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 51
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 51
 
 
  709:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** 
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  1400              		.thumb_func
  1402              	HAL_ADCEx_MultiModeStop_DMA:
  1403              	.LVL100:
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 52
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 52
 
 
  1404              	.LFB246:
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  1443 0026 0020     		movs	r0, #0
  1444              	.LVL102:
  1445              	.L100:
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 53
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 53
 
 
  765:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** 
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  1487              		.loc 1 734 3 is_stmt 0 view .LVU461
  1488 005c 0220     		movs	r0, #2
  1489              	.LVL107:
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 54
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 54
 
 
  769:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** 
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  1540              	.LFB248:
  801:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   /* Prevent unused argument(s) compilation warning */
  1541              		.loc 1 801 1 is_stmt 1 view -0
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 55
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 55
 
 
  1542              		.cfi_startproc
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  1582              		.loc 1 818 1 is_stmt 0 discriminator 2 view .LVU486
  1583 000a 30B4     		push	{r4, r5}
  1584              	.LCFI19:
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 56
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 56
 
 
  1585              		.cfi_def_cfa_offset 8
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  1624 0042 1343     		orrs	r3, r3, r2
  1625 0044 EB60     		str	r3, [r5, #12]
  1626              	.L117:
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 57
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 57
 
 
  868:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****   hadc->Instance->JSQR |=  ADC_SQR1(sConfigInjected->InjectedNbrOfConversion);
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  877:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** 
  1666              		.loc 1 877 24 view .LVU517
  1667 0082 A26B     		ldr	r2, [r4, #56]
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 58
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 58
 
 
  877:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** 
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  1707 00bc 0268     		ldr	r2, [r0]
  891:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****     hadc->Instance->CR2 |= sConfigInjected->ExternalTrigInjecConvEdge;
  1708              		.loc 1 891 25 view .LVU533
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 59
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 59
 
 
  1709 00be 9368     		ldr	r3, [r2, #8]
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  1746              		.loc 1 915 25 view .LVU550
  1747 00e8 5368     		ldr	r3, [r2, #4]
  1748 00ea 43F48053 		orr	r3, r3, #4096
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 60
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 60
 
 
  1749 00ee 5360     		str	r3, [r2, #4]
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  1787              		.loc 1 861 31 view .LVU566
  1788 011c 9BB2     		uxth	r3, r3
  1789 011e 03EB4303 		add	r3, r3, r3, lsl #1
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 61
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 61
 
 
  1790 0122 0724     		movs	r4, #7
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  1829              		.loc 1 909 25 view .LVU581
  1830 015c 5368     		ldr	r3, [r2, #4]
  1831 015e 23F48063 		bic	r3, r3, #1024
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 62
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 62
 
 
  1832 0162 5360     		str	r3, [r2, #4]
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  1870 018c 1E4B     		ldr	r3, .L138+4
  1871 018e 9A42     		cmp	r2, r3
  1872 0190 23D0     		beq	.L136
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 63
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 63
 
 
  1873              	.L128:
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  1913 01b4 0268     		ldr	r2, [r0]
  933:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c ****       break;
  1914              		.loc 1 933 29 view .LVU612
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 64
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 64
 
 
  1915 01b6 9369     		ldr	r3, [r2, #24]
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  1953 01e0 0A4A     		ldr	r2, .L138+8
  1954 01e2 5368     		ldr	r3, [r2, #4]
  1955 01e4 43F48003 		orr	r3, r3, #4194304
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 65
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 65
 
 
  1956 01e8 5360     		str	r3, [r2, #4]
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  2004              		.cfi_startproc
  2005              		@ args = 0, pretend = 0, frame = 0
  2006              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 66
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 66
 
 
  2007              		@ link register save eliminated.
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
 1005:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** 
  2045              		.loc 1 1005 3 is_stmt 1 discriminator 2 view .LVU653
 1005:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c **** 
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 67
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 67
 
 
  2046              		.loc 1 1005 22 is_stmt 0 discriminator 2 view .LVU654
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  2086 0052 7047     		bx	lr
  2087              	.L148:
  2088              		.align	2
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 68
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 68
 
 
  2089              	.L147:
@@ -4037,50 +4037,50 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 1
  2103              		.file 9 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h"
  2104              		.file 10 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h"
  2105              		.file 11 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
-ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s 			page 69
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccJenld9.s 			page 69
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f4xx_hal_adc_ex.c
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:20     .text.ADC_MultiModeDMAError:00000000 $t
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:25     .text.ADC_MultiModeDMAError:00000000 ADC_MultiModeDMAError
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:61     .text.ADC_MultiModeDMAHalfConvCplt:00000000 $t
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:66     .text.ADC_MultiModeDMAHalfConvCplt:00000000 ADC_MultiModeDMAHalfConvCplt
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:93     .text.ADC_MultiModeDMAConvCplt:00000000 $t
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:98     .text.ADC_MultiModeDMAConvCplt:00000000 ADC_MultiModeDMAConvCplt
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:192    .text.HAL_ADCEx_InjectedStart:00000000 $t
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:198    .text.HAL_ADCEx_InjectedStart:00000000 HAL_ADCEx_InjectedStart
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:427    .text.HAL_ADCEx_InjectedStart:000000f4 $d
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:435    .text.HAL_ADCEx_InjectedStart_IT:00000000 $t
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:441    .text.HAL_ADCEx_InjectedStart_IT:00000000 HAL_ADCEx_InjectedStart_IT
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:675    .text.HAL_ADCEx_InjectedStart_IT:000000fc $d
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:683    .text.HAL_ADCEx_InjectedStop:00000000 $t
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:689    .text.HAL_ADCEx_InjectedStop:00000000 HAL_ADCEx_InjectedStop
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:783    .text.HAL_ADCEx_InjectedPollForConversion:00000000 $t
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:789    .text.HAL_ADCEx_InjectedPollForConversion:00000000 HAL_ADCEx_InjectedPollForConversion
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:942    .text.HAL_ADCEx_InjectedStop_IT:00000000 $t
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:948    .text.HAL_ADCEx_InjectedStop_IT:00000000 HAL_ADCEx_InjectedStop_IT
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:1046   .text.HAL_ADCEx_InjectedGetValue:00000000 $t
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:1052   .text.HAL_ADCEx_InjectedGetValue:00000000 HAL_ADCEx_InjectedGetValue
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:1081   .text.HAL_ADCEx_InjectedGetValue:00000018 $d
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:1085   .text.HAL_ADCEx_InjectedGetValue:0000001c $t
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:1144   .text.HAL_ADCEx_MultiModeStart_DMA:00000000 $t
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:1150   .text.HAL_ADCEx_MultiModeStart_DMA:00000000 HAL_ADCEx_MultiModeStart_DMA
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:1385   .text.HAL_ADCEx_MultiModeStart_DMA:00000110 $d
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:1396   .text.HAL_ADCEx_MultiModeStop_DMA:00000000 $t
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:1402   .text.HAL_ADCEx_MultiModeStop_DMA:00000000 HAL_ADCEx_MultiModeStop_DMA
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:1495   .text.HAL_ADCEx_MultiModeStop_DMA:00000060 $d
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:1500   .text.HAL_ADCEx_MultiModeGetValue:00000000 $t
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:1506   .text.HAL_ADCEx_MultiModeGetValue:00000000 HAL_ADCEx_MultiModeGetValue
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:1527   .text.HAL_ADCEx_MultiModeGetValue:00000008 $d
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:1532   .text.HAL_ADCEx_InjectedConvCpltCallback:00000000 $t
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:1538   .text.HAL_ADCEx_InjectedConvCpltCallback:00000000 HAL_ADCEx_InjectedConvCpltCallback
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:1553   .text.HAL_ADCEx_InjectedConfigChannel:00000000 $t
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:1559   .text.HAL_ADCEx_InjectedConfigChannel:00000000 HAL_ADCEx_InjectedConfigChannel
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:1987   .text.HAL_ADCEx_InjectedConfigChannel:00000204 $d
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:1994   .text.HAL_ADCEx_MultiModeConfigChannel:00000000 $t
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:2000   .text.HAL_ADCEx_MultiModeConfigChannel:00000000 HAL_ADCEx_MultiModeConfigChannel
-C:\Users\honor\AppData\Local\Temp\cc3LeQ8h.s:2090   .text.HAL_ADCEx_MultiModeConfigChannel:00000054 $d
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:20     .text.ADC_MultiModeDMAError:00000000 $t
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:25     .text.ADC_MultiModeDMAError:00000000 ADC_MultiModeDMAError
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:61     .text.ADC_MultiModeDMAHalfConvCplt:00000000 $t
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:66     .text.ADC_MultiModeDMAHalfConvCplt:00000000 ADC_MultiModeDMAHalfConvCplt
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:93     .text.ADC_MultiModeDMAConvCplt:00000000 $t
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:98     .text.ADC_MultiModeDMAConvCplt:00000000 ADC_MultiModeDMAConvCplt
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:192    .text.HAL_ADCEx_InjectedStart:00000000 $t
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:198    .text.HAL_ADCEx_InjectedStart:00000000 HAL_ADCEx_InjectedStart
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:427    .text.HAL_ADCEx_InjectedStart:000000f4 $d
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:435    .text.HAL_ADCEx_InjectedStart_IT:00000000 $t
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:441    .text.HAL_ADCEx_InjectedStart_IT:00000000 HAL_ADCEx_InjectedStart_IT
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:675    .text.HAL_ADCEx_InjectedStart_IT:000000fc $d
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:683    .text.HAL_ADCEx_InjectedStop:00000000 $t
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:689    .text.HAL_ADCEx_InjectedStop:00000000 HAL_ADCEx_InjectedStop
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:783    .text.HAL_ADCEx_InjectedPollForConversion:00000000 $t
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:789    .text.HAL_ADCEx_InjectedPollForConversion:00000000 HAL_ADCEx_InjectedPollForConversion
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:942    .text.HAL_ADCEx_InjectedStop_IT:00000000 $t
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:948    .text.HAL_ADCEx_InjectedStop_IT:00000000 HAL_ADCEx_InjectedStop_IT
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:1046   .text.HAL_ADCEx_InjectedGetValue:00000000 $t
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:1052   .text.HAL_ADCEx_InjectedGetValue:00000000 HAL_ADCEx_InjectedGetValue
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:1081   .text.HAL_ADCEx_InjectedGetValue:00000018 $d
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:1085   .text.HAL_ADCEx_InjectedGetValue:0000001c $t
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:1144   .text.HAL_ADCEx_MultiModeStart_DMA:00000000 $t
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:1150   .text.HAL_ADCEx_MultiModeStart_DMA:00000000 HAL_ADCEx_MultiModeStart_DMA
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:1385   .text.HAL_ADCEx_MultiModeStart_DMA:00000110 $d
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:1396   .text.HAL_ADCEx_MultiModeStop_DMA:00000000 $t
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:1402   .text.HAL_ADCEx_MultiModeStop_DMA:00000000 HAL_ADCEx_MultiModeStop_DMA
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:1495   .text.HAL_ADCEx_MultiModeStop_DMA:00000060 $d
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:1500   .text.HAL_ADCEx_MultiModeGetValue:00000000 $t
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:1506   .text.HAL_ADCEx_MultiModeGetValue:00000000 HAL_ADCEx_MultiModeGetValue
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:1527   .text.HAL_ADCEx_MultiModeGetValue:00000008 $d
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:1532   .text.HAL_ADCEx_InjectedConvCpltCallback:00000000 $t
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:1538   .text.HAL_ADCEx_InjectedConvCpltCallback:00000000 HAL_ADCEx_InjectedConvCpltCallback
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:1553   .text.HAL_ADCEx_InjectedConfigChannel:00000000 $t
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:1559   .text.HAL_ADCEx_InjectedConfigChannel:00000000 HAL_ADCEx_InjectedConfigChannel
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:1987   .text.HAL_ADCEx_InjectedConfigChannel:00000204 $d
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:1994   .text.HAL_ADCEx_MultiModeConfigChannel:00000000 $t
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:2000   .text.HAL_ADCEx_MultiModeConfigChannel:00000000 HAL_ADCEx_MultiModeConfigChannel
+C:\Users\honor\AppData\Local\Temp\ccJenld9.s:2090   .text.HAL_ADCEx_MultiModeConfigChannel:00000054 $d
 
 UNDEFINED SYMBOLS
 HAL_ADC_ErrorCallback

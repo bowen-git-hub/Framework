@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\honor\AppData\Local\Temp\ccdDN1vy.s 			page 1
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccoyWsIh.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -19,312 +19,120 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\ccdDN1vy.s 			page 1
   16              		.text
   17              	.Ltext0:
   18              		.cfi_sections	.debug_frame
-  19              		.syntax unified
-  20              		.global _printf_float
-  21              		.section	.rodata.app_init.str1.4,"aMS",%progbits,1
-  22              		.align	2
-  23              	.LC0:
-  24 0000 6170705F 		.ascii	"app_init\015\000"
-  24      696E6974 
-  24      0D00
-  25 000a 0000     		.align	2
-  26              	.LC1:
-  27 000c 53425553 		.ascii	"SBUS_Init cussessful.\012\015\000"
-  27      5F496E69 
-  27      74206375 
-  27      73736573 
-  27      7366756C 
-  28              		.thumb
-  29              		.syntax unified
-  30              		.section	.text.app_init,"ax",%progbits
-  31              		.align	1
-  32              		.global	app_init
-  33              		.syntax unified
-  34              		.thumb
-  35              		.thumb_func
-  37              	app_init:
-  38              	.LFB242:
-  39              		.file 1 "APP/app.c"
+  19              		.section	.text.app_init,"ax",%progbits
+  20              		.align	1
+  21              		.global	app_init
+  22              		.syntax unified
+  23              		.thumb
+  24              		.thumb_func
+  26              	app_init:
+  27              	.LFB246:
+  28              		.file 1 "APP/app.c"
    1:APP/app.c     **** #include "app.h"
-   2:APP/app.c     **** #include "usart.h"
-   3:APP/app.c     **** #include "dma.h"
-   4:APP/app.c     **** #include <stdint.h>
-   5:APP/app.c     **** uint32_t debug_count = 0;
-   6:APP/app.c     **** asm(".global _printf_float"); // 使能printf浮点数支持
-   7:APP/app.c     **** uint8_t uart_rx_buffer[32] = {0};
-   8:APP/app.c     **** UART_HandleTypeDef *uart_handle = &huart5;
-   9:APP/app.c     **** void app_init(void)
-  10:APP/app.c     **** {
-  40              		.loc 1 10 1 view -0
-  41              		.cfi_startproc
-  42              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\honor\AppData\Local\Temp\ccdDN1vy.s 			page 2
-
-
-  43              		@ frame_needed = 0, uses_anonymous_args = 0
-  44 0000 10B5     		push	{r4, lr}
-  45              	.LCFI0:
-  46              		.cfi_def_cfa_offset 8
-  47              		.cfi_offset 4, -8
-  48              		.cfi_offset 14, -4
-  11:APP/app.c     ****     printf("app_init\r\n");
-  49              		.loc 1 11 5 view .LVU1
-  50 0002 0A48     		ldr	r0, .L3
-  51 0004 FFF7FEFF 		bl	puts
-  52              	.LVL0:
-  12:APP/app.c     ****     // 初始化UART DMA接收
-  13:APP/app.c     ****     HAL_UARTEx_ReceiveToIdle_DMA(uart_handle, uart_rx_buffer, sizeof(uart_rx_buffer)); // 启动DMA
-  53              		.loc 1 13 5 view .LVU2
-  54 0008 094C     		ldr	r4, .L3+4
-  55 000a 2022     		movs	r2, #32
-  56 000c 0949     		ldr	r1, .L3+8
-  57 000e 2068     		ldr	r0, [r4]
-  58 0010 FFF7FEFF 		bl	HAL_UARTEx_ReceiveToIdle_DMA
-  59              	.LVL1:
-  14:APP/app.c     ****     __HAL_DMA_DISABLE_IT(uart_handle->hdmarx, DMA_IT_HT);                              // 关闭DMA
-  60              		.loc 1 14 5 view .LVU3
-  61 0014 2368     		ldr	r3, [r4]
-  62 0016 DB6B     		ldr	r3, [r3, #60]
-  63 0018 1A68     		ldr	r2, [r3]
-  64 001a 1368     		ldr	r3, [r2]
-  65 001c 23F00803 		bic	r3, r3, #8
-  66 0020 1360     		str	r3, [r2]
-  15:APP/app.c     ****     printf("SBUS_Init cussessful.\n\r");
-  67              		.loc 1 15 5 view .LVU4
-  68 0022 0548     		ldr	r0, .L3+12
-  69 0024 FFF7FEFF 		bl	printf
-  70              	.LVL2:
-  16:APP/app.c     **** }
-  71              		.loc 1 16 1 is_stmt 0 view .LVU5
-  72 0028 10BD     		pop	{r4, pc}
-  73              	.L4:
-  74 002a 00BF     		.align	2
-  75              	.L3:
-  76 002c 00000000 		.word	.LC0
-  77 0030 00000000 		.word	.LANCHOR1
-  78 0034 00000000 		.word	.LANCHOR0
-  79 0038 0C000000 		.word	.LC1
-  80              		.cfi_endproc
-  81              	.LFE242:
-  83              		.section	.text.app_loop,"ax",%progbits
-  84              		.align	1
-  85              		.global	app_loop
-  86              		.syntax unified
-  87              		.thumb
-  88              		.thumb_func
-  90              	app_loop:
-  91              	.LFB243:
+   2:APP/app.c     **** #include "robot_cmd.h"
+   3:APP/app.c     **** #include <stdio.h>
+   4:APP/app.c     **** #include "gpio.h"
+   5:APP/app.c     **** #include "cmsis_os.h"
+   6:APP/app.c     **** #include "hal.h"
+   7:APP/app.c     **** #include "spi.h"
+   8:APP/app.c     **** #include "ax_oled_1305.h"
+   9:APP/app.c     **** 
+  10:APP/app.c     **** 
+  11:APP/app.c     **** 
+  12:APP/app.c     **** void app_init(void)
+  13:APP/app.c     **** {
+  29              		.loc 1 13 1 view -0
+  30              		.cfi_startproc
+  31              		@ args = 0, pretend = 0, frame = 0
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+  33 0000 08B5     		push	{r3, lr}
+  34              	.LCFI0:
+  35              		.cfi_def_cfa_offset 8
+  36              		.cfi_offset 3, -8
+  37              		.cfi_offset 14, -4
+  14:APP/app.c     ****     // printf("app_init\r\n");
+  15:APP/app.c     ****     robot_cmd_init();
+  38              		.loc 1 15 5 view .LVU1
+  39 0002 FFF7FEFF 		bl	robot_cmd_init
+  40              	.LVL0:
+  16:APP/app.c     **** 
   17:APP/app.c     **** 
-  18:APP/app.c     **** void app_loop(void)
-  19:APP/app.c     **** {
-  92              		.loc 1 19 1 is_stmt 1 view -0
-ARM GAS  C:\Users\honor\AppData\Local\Temp\ccdDN1vy.s 			page 3
+  18:APP/app.c     **** }
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccoyWsIh.s 			page 2
 
 
-  93              		.cfi_startproc
-  94              		@ args = 0, pretend = 0, frame = 0
-  95              		@ frame_needed = 0, uses_anonymous_args = 0
-  96              		@ link register save eliminated.
-  20:APP/app.c     **** }
-  97              		.loc 1 20 1 view .LVU7
-  98 0000 7047     		bx	lr
-  99              		.cfi_endproc
- 100              	.LFE243:
- 102              		.section	.text._write,"ax",%progbits
- 103              		.align	1
- 104              		.global	_write
- 105              		.syntax unified
- 106              		.thumb
- 107              		.thumb_func
- 109              	_write:
- 110              	.LVL3:
- 111              	.LFB244:
-  21:APP/app.c     **** 
-  22:APP/app.c     **** // 重定向printf到UART1,方便调试
-  23:APP/app.c     **** int _write(int file, char *ptr, int len)
-  24:APP/app.c     **** {
- 112              		.loc 1 24 1 view -0
- 113              		.cfi_startproc
- 114              		@ args = 0, pretend = 0, frame = 0
- 115              		@ frame_needed = 0, uses_anonymous_args = 0
- 116              		.loc 1 24 1 is_stmt 0 view .LVU9
- 117 0000 10B5     		push	{r4, lr}
- 118              	.LCFI1:
- 119              		.cfi_def_cfa_offset 8
- 120              		.cfi_offset 4, -8
- 121              		.cfi_offset 14, -4
- 122 0002 1446     		mov	r4, r2
-  25:APP/app.c     ****     HAL_UART_Transmit(&huart1, (uint8_t *)ptr, len, HAL_MAX_DELAY);
- 123              		.loc 1 25 5 is_stmt 1 view .LVU10
- 124 0004 4FF0FF33 		mov	r3, #-1
- 125 0008 92B2     		uxth	r2, r2
- 126              	.LVL4:
- 127              		.loc 1 25 5 is_stmt 0 view .LVU11
- 128 000a 0248     		ldr	r0, .L8
- 129              	.LVL5:
- 130              		.loc 1 25 5 view .LVU12
- 131 000c FFF7FEFF 		bl	HAL_UART_Transmit
- 132              	.LVL6:
-  26:APP/app.c     ****     return len;
- 133              		.loc 1 26 5 is_stmt 1 view .LVU13
+  41              		.loc 1 18 1 is_stmt 0 view .LVU2
+  42 0006 08BD     		pop	{r3, pc}
+  43              		.cfi_endproc
+  44              	.LFE246:
+  46              		.section	.text.app_loop,"ax",%progbits
+  47              		.align	1
+  48              		.global	app_loop
+  49              		.syntax unified
+  50              		.thumb
+  51              		.thumb_func
+  53              	app_loop:
+  54              	.LFB247:
+  19:APP/app.c     **** 
+  20:APP/app.c     **** void app_loop(void)
+  21:APP/app.c     **** {
+  55              		.loc 1 21 1 is_stmt 1 view -0
+  56              		.cfi_startproc
+  57              		@ args = 0, pretend = 0, frame = 0
+  58              		@ frame_needed = 0, uses_anonymous_args = 0
+  59 0000 08B5     		push	{r3, lr}
+  60              	.LCFI1:
+  61              		.cfi_def_cfa_offset 8
+  62              		.cfi_offset 3, -8
+  63              		.cfi_offset 14, -4
+  22:APP/app.c     ****     robot_cmd_update();
+  64              		.loc 1 22 5 view .LVU4
+  65 0002 FFF7FEFF 		bl	robot_cmd_update
+  66              	.LVL1:
+  23:APP/app.c     **** }
+  67              		.loc 1 23 1 is_stmt 0 view .LVU5
+  68 0006 08BD     		pop	{r3, pc}
+  69              		.cfi_endproc
+  70              	.LFE247:
+  72              		.section	.text.app_debug,"ax",%progbits
+  73              		.align	1
+  74              		.global	app_debug
+  75              		.syntax unified
+  76              		.thumb
+  77              		.thumb_func
+  79              	app_debug:
+  80              	.LFB248:
+  24:APP/app.c     **** 
+  25:APP/app.c     **** void app_debug(void)
+  26:APP/app.c     **** {
+  81              		.loc 1 26 1 is_stmt 1 view -0
+  82              		.cfi_startproc
+  83              		@ args = 0, pretend = 0, frame = 0
+  84              		@ frame_needed = 0, uses_anonymous_args = 0
+  85              		@ link register save eliminated.
   27:APP/app.c     **** }
- 134              		.loc 1 27 1 is_stmt 0 view .LVU14
- 135 0010 2046     		mov	r0, r4
- 136 0012 10BD     		pop	{r4, pc}
- 137              	.LVL7:
- 138              	.L9:
- 139              		.loc 1 27 1 view .LVU15
- 140              		.align	2
- 141              	.L8:
- 142 0014 00000000 		.word	huart1
- 143              		.cfi_endproc
-ARM GAS  C:\Users\honor\AppData\Local\Temp\ccdDN1vy.s 			page 4
+  86              		.loc 1 27 1 view .LVU7
+  87 0000 7047     		bx	lr
+  88              		.cfi_endproc
+  89              	.LFE248:
+  91              		.text
+  92              	.Letext0:
+  93              		.file 2 "APP/robot_cmd.h"
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccoyWsIh.s 			page 3
 
 
- 144              	.LFE244:
- 146              		.section	.text.HAL_UARTEx_RxEventCallback,"ax",%progbits
- 147              		.align	1
- 148              		.global	HAL_UARTEx_RxEventCallback
- 149              		.syntax unified
- 150              		.thumb
- 151              		.thumb_func
- 153              	HAL_UARTEx_RxEventCallback:
- 154              	.LVL8:
- 155              	.LFB245:
-  28:APP/app.c     **** 
-  29:APP/app.c     **** void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
-  30:APP/app.c     **** {
- 156              		.loc 1 30 1 is_stmt 1 view -0
- 157              		.cfi_startproc
- 158              		@ args = 0, pretend = 0, frame = 0
- 159              		@ frame_needed = 0, uses_anonymous_args = 0
-  31:APP/app.c     ****    // printf("UARTEx_RxEventCallbackaaaaaaaaaaaaaaaaaaa: %d, %s.\n\r", Size, "debug");
-  32:APP/app.c     **** 
-  33:APP/app.c     ****     if (huart->Instance == UART5) // 判断是否是遥控器接收UART
- 160              		.loc 1 33 5 view .LVU17
- 161              		.loc 1 33 14 is_stmt 0 view .LVU18
- 162 0000 0268     		ldr	r2, [r0]
- 163              		.loc 1 33 8 view .LVU19
- 164 0002 0A4B     		ldr	r3, .L17
- 165 0004 9A42     		cmp	r2, r3
- 166 0006 00D0     		beq	.L16
- 167 0008 7047     		bx	lr
- 168              	.L16:
-  30:APP/app.c     ****    // printf("UARTEx_RxEventCallbackaaaaaaaaaaaaaaaaaaa: %d, %s.\n\r", Size, "debug");
- 169              		.loc 1 30 1 view .LVU20
- 170 000a 10B5     		push	{r4, lr}
- 171              	.LCFI2:
- 172              		.cfi_def_cfa_offset 8
- 173              		.cfi_offset 4, -8
- 174              		.cfi_offset 14, -4
-  34:APP/app.c     ****     {
-  35:APP/app.c     ****        // printf("SBUS_RxEventCallback: %d\n\r", Size);
-  36:APP/app.c     ****         // SBUS_RxEventCallback(huart, Size);
-  37:APP/app.c     ****         //  初始化UART DMA接收
-  38:APP/app.c     ****         //HAL_Delay(1);
-  39:APP/app.c     ****         debug_count = Size;
- 175              		.loc 1 39 9 is_stmt 1 view .LVU21
- 176              		.loc 1 39 21 is_stmt 0 view .LVU22
- 177 000c 084B     		ldr	r3, .L17+4
- 178 000e 1960     		str	r1, [r3]
-  40:APP/app.c     ****         HAL_UARTEx_ReceiveToIdle_DMA(uart_handle, uart_rx_buffer, sizeof(uart_rx_buffer)); // 启�
- 179              		.loc 1 40 9 is_stmt 1 view .LVU23
- 180 0010 084C     		ldr	r4, .L17+8
- 181 0012 2022     		movs	r2, #32
- 182 0014 0849     		ldr	r1, .L17+12
- 183              	.LVL9:
- 184              		.loc 1 40 9 is_stmt 0 view .LVU24
- 185 0016 2068     		ldr	r0, [r4]
- 186              	.LVL10:
- 187              		.loc 1 40 9 view .LVU25
- 188 0018 FFF7FEFF 		bl	HAL_UARTEx_ReceiveToIdle_DMA
-ARM GAS  C:\Users\honor\AppData\Local\Temp\ccdDN1vy.s 			page 5
-
-
- 189              	.LVL11:
-  41:APP/app.c     ****         __HAL_DMA_DISABLE_IT(uart_handle->hdmarx, DMA_IT_HT);
- 190              		.loc 1 41 9 is_stmt 1 view .LVU26
- 191 001c 2368     		ldr	r3, [r4]
- 192 001e DB6B     		ldr	r3, [r3, #60]
- 193 0020 1A68     		ldr	r2, [r3]
- 194 0022 1368     		ldr	r3, [r2]
- 195 0024 23F00803 		bic	r3, r3, #8
- 196 0028 1360     		str	r3, [r2]
-  42:APP/app.c     ****     }
-  43:APP/app.c     **** }
- 197              		.loc 1 43 1 is_stmt 0 view .LVU27
- 198 002a 10BD     		pop	{r4, pc}
- 199              	.L18:
- 200              		.align	2
- 201              	.L17:
- 202 002c 00500040 		.word	1073762304
- 203 0030 00000000 		.word	.LANCHOR2
- 204 0034 00000000 		.word	.LANCHOR1
- 205 0038 00000000 		.word	.LANCHOR0
- 206              		.cfi_endproc
- 207              	.LFE245:
- 209              		.global	uart_handle
- 210              		.global	uart_rx_buffer
- 211              		.global	debug_count
- 212              		.section	.bss.debug_count,"aw",%nobits
- 213              		.align	2
- 214              		.set	.LANCHOR2,. + 0
- 217              	debug_count:
- 218 0000 00000000 		.space	4
- 219              		.section	.bss.uart_rx_buffer,"aw",%nobits
- 220              		.align	2
- 221              		.set	.LANCHOR0,. + 0
- 224              	uart_rx_buffer:
- 225 0000 00000000 		.space	32
- 225      00000000 
- 225      00000000 
- 225      00000000 
- 225      00000000 
- 226              		.section	.data.uart_handle,"aw"
- 227              		.align	2
- 228              		.set	.LANCHOR1,. + 0
- 231              	uart_handle:
- 232 0000 00000000 		.word	huart5
- 233              		.text
- 234              	.Letext0:
- 235              		.file 2 "e:\\ng_circumstance\\arm\\arm-none-eabi\\include\\machine\\_default_types.h"
- 236              		.file 3 "e:\\ng_circumstance\\arm\\arm-none-eabi\\include\\sys\\_stdint.h"
- 237              		.file 4 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h"
- 238              		.file 5 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
- 239              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
- 240              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h"
- 241              		.file 8 "Core/Inc/usart.h"
- 242              		.file 9 "e:\\ng_circumstance\\arm\\arm-none-eabi\\include\\stdio.h"
- 243              		.file 10 "<built-in>"
-ARM GAS  C:\Users\honor\AppData\Local\Temp\ccdDN1vy.s 			page 6
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccoyWsIh.s 			page 4
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 app.c
-C:\Users\honor\AppData\Local\Temp\ccdDN1vy.s:22     .rodata.app_init.str1.4:00000000 $d
-C:\Users\honor\AppData\Local\Temp\ccdDN1vy.s:31     .text.app_init:00000000 $t
-C:\Users\honor\AppData\Local\Temp\ccdDN1vy.s:37     .text.app_init:00000000 app_init
-C:\Users\honor\AppData\Local\Temp\ccdDN1vy.s:76     .text.app_init:0000002c $d
-C:\Users\honor\AppData\Local\Temp\ccdDN1vy.s:84     .text.app_loop:00000000 $t
-C:\Users\honor\AppData\Local\Temp\ccdDN1vy.s:90     .text.app_loop:00000000 app_loop
-C:\Users\honor\AppData\Local\Temp\ccdDN1vy.s:103    .text._write:00000000 $t
-C:\Users\honor\AppData\Local\Temp\ccdDN1vy.s:109    .text._write:00000000 _write
-C:\Users\honor\AppData\Local\Temp\ccdDN1vy.s:142    .text._write:00000014 $d
-C:\Users\honor\AppData\Local\Temp\ccdDN1vy.s:147    .text.HAL_UARTEx_RxEventCallback:00000000 $t
-C:\Users\honor\AppData\Local\Temp\ccdDN1vy.s:153    .text.HAL_UARTEx_RxEventCallback:00000000 HAL_UARTEx_RxEventCallback
-C:\Users\honor\AppData\Local\Temp\ccdDN1vy.s:202    .text.HAL_UARTEx_RxEventCallback:0000002c $d
-C:\Users\honor\AppData\Local\Temp\ccdDN1vy.s:231    .data.uart_handle:00000000 uart_handle
-C:\Users\honor\AppData\Local\Temp\ccdDN1vy.s:224    .bss.uart_rx_buffer:00000000 uart_rx_buffer
-C:\Users\honor\AppData\Local\Temp\ccdDN1vy.s:217    .bss.debug_count:00000000 debug_count
-C:\Users\honor\AppData\Local\Temp\ccdDN1vy.s:213    .bss.debug_count:00000000 $d
-C:\Users\honor\AppData\Local\Temp\ccdDN1vy.s:220    .bss.uart_rx_buffer:00000000 $d
-C:\Users\honor\AppData\Local\Temp\ccdDN1vy.s:227    .data.uart_handle:00000000 $d
+C:\Users\honor\AppData\Local\Temp\ccoyWsIh.s:20     .text.app_init:00000000 $t
+C:\Users\honor\AppData\Local\Temp\ccoyWsIh.s:26     .text.app_init:00000000 app_init
+C:\Users\honor\AppData\Local\Temp\ccoyWsIh.s:47     .text.app_loop:00000000 $t
+C:\Users\honor\AppData\Local\Temp\ccoyWsIh.s:53     .text.app_loop:00000000 app_loop
+C:\Users\honor\AppData\Local\Temp\ccoyWsIh.s:73     .text.app_debug:00000000 $t
+C:\Users\honor\AppData\Local\Temp\ccoyWsIh.s:79     .text.app_debug:00000000 app_debug
 
 UNDEFINED SYMBOLS
-_printf_float
-puts
-HAL_UARTEx_ReceiveToIdle_DMA
-printf
-HAL_UART_Transmit
-huart1
-huart5
+robot_cmd_init
+robot_cmd_update
