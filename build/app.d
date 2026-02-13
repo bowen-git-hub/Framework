@@ -1,5 +1,17 @@
 build/app.o: APP/app.c APP/app.h APP/robot_cmd.h \
- frameworks/f407/Core/Inc/gpio.h frameworks/f407/Core/Inc/main.h \
+ frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
+ frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+ frameworks/f407/Core/Inc/FreeRTOSConfig.h \
+ frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+ frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+ frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+ frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h \
+ frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+ frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+ frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+ frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
+ hal_bsp/hal/hal.h hal_bsp/hal/driver/motor/pwm_motor.h \
+ frameworks/f407/Core/Inc/tim.h frameworks/f407/Core/Inc/main.h \
  frameworks/f407/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  frameworks/f407/Core/Inc/stm32f4xx_hal_conf.h \
  frameworks/f407/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
@@ -34,23 +46,23 @@ build/app.o: APP/app.c APP/app.h APP/robot_cmd.h \
  frameworks/f407/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
  frameworks/f407/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
  frameworks/f407/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
- frameworks/f407/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
- frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
- frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
- frameworks/f407/Core/Inc/FreeRTOSConfig.h \
- frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
- frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
- frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
- frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h \
- frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
- frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
- frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
- frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
- hal_bsp/hal/hal.h frameworks/f407/Core/Inc/spi.h \
- hal_bsp/hal/driver/spi_oled/ax_oled_1305.h
+ frameworks/f407/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 APP/app.h:
 APP/robot_cmd.h:
-frameworks/f407/Core/Inc/gpio.h:
+frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:
+frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
+frameworks/f407/Core/Inc/FreeRTOSConfig.h:
+frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h:
+frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/portable.h:
+frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h:
+frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h:
+frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h:
+frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
+frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/list.h:
+frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
+hal_bsp/hal/hal.h:
+hal_bsp/hal/driver/motor/pwm_motor.h:
+frameworks/f407/Core/Inc/tim.h:
 frameworks/f407/Core/Inc/main.h:
 frameworks/f407/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 frameworks/f407/Core/Inc/stm32f4xx_hal_conf.h:
@@ -87,17 +99,3 @@ frameworks/f407/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h:
 frameworks/f407/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
 frameworks/f407/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
 frameworks/f407/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
-frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:
-frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
-frameworks/f407/Core/Inc/FreeRTOSConfig.h:
-frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h:
-frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/portable.h:
-frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h:
-frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h:
-frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h:
-frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
-frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/list.h:
-frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
-hal_bsp/hal/hal.h:
-frameworks/f407/Core/Inc/spi.h:
-hal_bsp/hal/driver/spi_oled/ax_oled_1305.h:
