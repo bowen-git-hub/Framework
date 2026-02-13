@@ -14,7 +14,7 @@
 # target
 ######################################
 TARGET = Framework
-CORE_DIR = frameworks/f407
+
 
 ######################################
 # building variables
@@ -36,55 +36,55 @@ BUILD_DIR = build
 ######################################
 # C sources
 C_SOURCES =  \
-$(CORE_DIR)/Core/Src/main.c \
-$(CORE_DIR)/Core/Src/gpio.c \
-$(CORE_DIR)/Core/Src/freertos.c \
-$(CORE_DIR)/Core/Src/stm32f4xx_it.c \
-$(CORE_DIR)/Core/Src/stm32f4xx_hal_msp.c \
-$(CORE_DIR)/Core/Src/stm32f4xx_hal_timebase_tim.c \
-$(CORE_DIR)/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c \
-$(CORE_DIR)/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c \
-$(CORE_DIR)/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c \
-$(CORE_DIR)/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c \
-$(CORE_DIR)/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c \
-$(CORE_DIR)/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c \
-$(CORE_DIR)/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c \
-$(CORE_DIR)/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c \
-$(CORE_DIR)/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c \
-$(CORE_DIR)/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c \
-$(CORE_DIR)/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c \
-$(CORE_DIR)/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c \
-$(CORE_DIR)/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c \
-$(CORE_DIR)/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c \
-$(CORE_DIR)/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c \
-$(CORE_DIR)/Core/Src/system_stm32f4xx.c \
-$(CORE_DIR)/Middlewares/Third_Party/FreeRTOS/Source/croutine.c \
-$(CORE_DIR)/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c \
-$(CORE_DIR)/Middlewares/Third_Party/FreeRTOS/Source/list.c \
-$(CORE_DIR)/Middlewares/Third_Party/FreeRTOS/Source/queue.c \
-$(CORE_DIR)/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c \
-$(CORE_DIR)/Middlewares/Third_Party/FreeRTOS/Source/tasks.c \
-$(CORE_DIR)/Middlewares/Third_Party/FreeRTOS/Source/timers.c \
-$(CORE_DIR)/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c \
-$(CORE_DIR)/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c \
-$(CORE_DIR)/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c \
-$(CORE_DIR)/Core/Src/sysmem.c \
-$(CORE_DIR)/Core/Src/syscalls.c \
-$(CORE_DIR)/Core/Src/usart.c \
-$(CORE_DIR)/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c \
-$(CORE_DIR)/Core/Src/dma.c \
-$(CORE_DIR)/Core/Src/adc.c \
-$(CORE_DIR)/Core/Src/can.c \
-$(CORE_DIR)/Core/Src/i2c.c \
-$(CORE_DIR)/Core/Src/spi.c \
-$(CORE_DIR)/Core/Src/tim.c \
-$(CORE_DIR)/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c \
-$(CORE_DIR)/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c \
-$(CORE_DIR)/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c \
-$(CORE_DIR)/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c \
-$(CORE_DIR)/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c \
-$(CORE_DIR)/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c \
-$(CORE_DIR)/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c
+Core/Src/main.c \
+Core/Src/gpio.c \
+Core/Src/freertos.c \
+Core/Src/stm32f4xx_it.c \
+Core/Src/stm32f4xx_hal_msp.c \
+Core/Src/stm32f4xx_hal_timebase_tim.c \
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c \
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c \
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c \
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c \
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c \
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c \
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c \
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c \
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c \
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c \
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c \
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c \
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c \
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c \
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c \
+Core/Src/system_stm32f4xx.c \
+Middlewares/Third_Party/FreeRTOS/Source/croutine.c \
+Middlewares/Third_Party/FreeRTOS/Source/event_groups.c \
+Middlewares/Third_Party/FreeRTOS/Source/list.c \
+Middlewares/Third_Party/FreeRTOS/Source/queue.c \
+Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c \
+Middlewares/Third_Party/FreeRTOS/Source/tasks.c \
+Middlewares/Third_Party/FreeRTOS/Source/timers.c \
+Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c \
+Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c \
+Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c \
+Core/Src/sysmem.c \
+Core/Src/syscalls.c \
+Core/Src/usart.c \
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c \
+Core/Src/dma.c \
+Core/Src/adc.c \
+Core/Src/can.c \
+Core/Src/i2c.c \
+Core/Src/spi.c \
+Core/Src/tim.c \
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c \
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c \
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c \
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c \
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c \
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c \
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c
 
 C_SOURCES +=  \
 APP/app.c \
@@ -97,7 +97,7 @@ hal_bsp/hal/driver/remote/sbus_ht10a.c
 
 # ASM sources
 ASM_SOURCES =  \
-$(CORE_DIR)/startup_stm32f407xx.s
+startup_stm32f407xx.s
 
 # ASM sources
 ASMM_SOURCES = 
@@ -150,18 +150,19 @@ C_DEFS =  \
 
 # AS includes
 AS_INCLUDES =  \
--I$(CORE_DIR)/Core/Inc
+-ICore/Inc
 
 # C includes
 C_INCLUDES =  \
--I$(CORE_DIR)/Core/Inc \
--I$(CORE_DIR)/Drivers/STM32F4xx_HAL_Driver/Inc \
--I$(CORE_DIR)/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy \
--I$(CORE_DIR)/Middlewares/Third_Party/FreeRTOS/Source/include \
--I$(CORE_DIR)/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 \
--I$(CORE_DIR)/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F \
--I$(CORE_DIR)/Drivers/CMSIS/Device/ST/STM32F4xx/Include \
--I$(CORE_DIR)/Drivers/CMSIS/Include 
+-ICore/Inc \
+-IDrivers/STM32F4xx_HAL_Driver/Inc \
+-IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy \
+-IMiddlewares/Third_Party/FreeRTOS/Source/include \
+-IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 \
+-IMiddlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F \
+-IDrivers/CMSIS/Device/ST/STM32F4xx/Include \
+-IDrivers/CMSIS/Include \
+
 
 C_INCLUDES +=  \
 -IAPP \
@@ -189,7 +190,7 @@ CFLAGS += -MMD -MP -MF"$(@:%.o=%.d)"
 # LDFLAGS
 #######################################
 # link script
-LDSCRIPT = $(CORE_DIR)/STM32F407VETx_FLASH.ld
+LDSCRIPT = STM32F407VETx_FLASH.ld
 
 # libraries
 LIBS = -lc -lm -lnosys 
