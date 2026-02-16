@@ -1,5 +1,6 @@
 build/robot_cmd.o: APP/robot_cmd.c APP/robot_cmd.h \
- frameworks/f407/Core/Inc/usart.h frameworks/f407/Core/Inc/main.h \
+ hal_bsp/hal/driver/spi_oled/ax_oled_1305.h \
+ frameworks/f407/Core/Inc/spi.h frameworks/f407/Core/Inc/main.h \
  frameworks/f407/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  frameworks/f407/Core/Inc/stm32f4xx_hal_conf.h \
  frameworks/f407/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
@@ -35,7 +36,8 @@ build/robot_cmd.o: APP/robot_cmd.c APP/robot_cmd.h \
  frameworks/f407/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
  frameworks/f407/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  frameworks/f407/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
- hal_bsp/hal/driver/remote/sbus_ht10a.h \
+ hal_bsp/hal/driver/remote/sbus_ht10a.h frameworks/f407/Core/Inc/usart.h \
+ hal_bsp/hal/driver/buzzer/buzzer.h \
  frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
  frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
  frameworks/f407/Core/Inc/FreeRTOSConfig.h \
@@ -49,7 +51,8 @@ build/robot_cmd.o: APP/robot_cmd.c APP/robot_cmd.h \
  frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
  hal_bsp/hal/driver/motor/pwm_motor.h frameworks/f407/Core/Inc/tim.h
 APP/robot_cmd.h:
-frameworks/f407/Core/Inc/usart.h:
+hal_bsp/hal/driver/spi_oled/ax_oled_1305.h:
+frameworks/f407/Core/Inc/spi.h:
 frameworks/f407/Core/Inc/main.h:
 frameworks/f407/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 frameworks/f407/Core/Inc/stm32f4xx_hal_conf.h:
@@ -87,6 +90,8 @@ frameworks/f407/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
 frameworks/f407/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
 frameworks/f407/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
 hal_bsp/hal/driver/remote/sbus_ht10a.h:
+frameworks/f407/Core/Inc/usart.h:
+hal_bsp/hal/driver/buzzer/buzzer.h:
 frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:
 frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 frameworks/f407/Core/Inc/FreeRTOSConfig.h:

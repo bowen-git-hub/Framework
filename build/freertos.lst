@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s 			page 1
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s 			page 1
   28:frameworks/f407/Core/Src/freertos.c **** #include "app.h"
   29:frameworks/f407/Core/Src/freertos.c **** /* USER CODE END Includes */
   30:frameworks/f407/Core/Src/freertos.c **** 
-ARM GAS  C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s 			page 2
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s 			page 2
 
 
   31:frameworks/f407/Core/Src/freertos.c **** /* Private typedef -----------------------------------------------------------*/
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s 			page 1
   85:frameworks/f407/Core/Src/freertos.c **** void StartTask02(void *argument);
   86:frameworks/f407/Core/Src/freertos.c **** void StartTask03(void *argument);
   87:frameworks/f407/Core/Src/freertos.c **** void StartTask04(void *argument);
-ARM GAS  C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s 			page 3
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s 			page 3
 
 
   88:frameworks/f407/Core/Src/freertos.c **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s 			page 1
  142:frameworks/f407/Core/Src/freertos.c ****   * @brief  Function implementing the defaultTask thread.
  143:frameworks/f407/Core/Src/freertos.c ****   * @param  argument: Not used
  144:frameworks/f407/Core/Src/freertos.c ****   * @retval None
-ARM GAS  C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s 			page 4
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s 			page 4
 
 
  145:frameworks/f407/Core/Src/freertos.c ****   */
@@ -238,36 +238,37 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s 			page 1
  164:frameworks/f407/Core/Src/freertos.c **** */
  165:frameworks/f407/Core/Src/freertos.c **** /* USER CODE END Header_StartTask02 */
  166:frameworks/f407/Core/Src/freertos.c **** void StartTask02(void *argument)
-ARM GAS  C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s 			page 5
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s 			page 5
 
 
  167:frameworks/f407/Core/Src/freertos.c **** {
  168:frameworks/f407/Core/Src/freertos.c ****   /* USER CODE BEGIN StartTask02 */
- 169:frameworks/f407/Core/Src/freertos.c ****   /* Infinite loop */
- 170:frameworks/f407/Core/Src/freertos.c ****   for(;;)
- 171:frameworks/f407/Core/Src/freertos.c ****   {
- 172:frameworks/f407/Core/Src/freertos.c ****     app_debug();
- 173:frameworks/f407/Core/Src/freertos.c ****     osDelay(1);
- 174:frameworks/f407/Core/Src/freertos.c ****   }
- 175:frameworks/f407/Core/Src/freertos.c ****   /* USER CODE END StartTask02 */
- 176:frameworks/f407/Core/Src/freertos.c **** }
- 177:frameworks/f407/Core/Src/freertos.c **** 
- 178:frameworks/f407/Core/Src/freertos.c **** /* USER CODE BEGIN Header_StartTask03 */
- 179:frameworks/f407/Core/Src/freertos.c **** /**
- 180:frameworks/f407/Core/Src/freertos.c **** * @brief Function implementing the myTask03 thread.
- 181:frameworks/f407/Core/Src/freertos.c **** * @param argument: Not used
- 182:frameworks/f407/Core/Src/freertos.c **** * @retval None
- 183:frameworks/f407/Core/Src/freertos.c **** */
- 184:frameworks/f407/Core/Src/freertos.c **** /* USER CODE END Header_StartTask03 */
- 185:frameworks/f407/Core/Src/freertos.c **** void StartTask03(void *argument)
- 186:frameworks/f407/Core/Src/freertos.c **** {
-  65              		.loc 1 186 1 view -0
+ 169:frameworks/f407/Core/Src/freertos.c ****   osDelay(3000);
+ 170:frameworks/f407/Core/Src/freertos.c ****   /* Infinite loop */
+ 171:frameworks/f407/Core/Src/freertos.c ****   for(;;)
+ 172:frameworks/f407/Core/Src/freertos.c ****   {
+ 173:frameworks/f407/Core/Src/freertos.c ****     app_debug();
+ 174:frameworks/f407/Core/Src/freertos.c ****     osDelay(10);
+ 175:frameworks/f407/Core/Src/freertos.c ****   }
+ 176:frameworks/f407/Core/Src/freertos.c ****   /* USER CODE END StartTask02 */
+ 177:frameworks/f407/Core/Src/freertos.c **** }
+ 178:frameworks/f407/Core/Src/freertos.c **** 
+ 179:frameworks/f407/Core/Src/freertos.c **** /* USER CODE BEGIN Header_StartTask03 */
+ 180:frameworks/f407/Core/Src/freertos.c **** /**
+ 181:frameworks/f407/Core/Src/freertos.c **** * @brief Function implementing the myTask03 thread.
+ 182:frameworks/f407/Core/Src/freertos.c **** * @param argument: Not used
+ 183:frameworks/f407/Core/Src/freertos.c **** * @retval None
+ 184:frameworks/f407/Core/Src/freertos.c **** */
+ 185:frameworks/f407/Core/Src/freertos.c **** /* USER CODE END Header_StartTask03 */
+ 186:frameworks/f407/Core/Src/freertos.c **** void StartTask03(void *argument)
+ 187:frameworks/f407/Core/Src/freertos.c **** {
+  65              		.loc 1 187 1 view -0
   66              		.cfi_startproc
   67              		@ Volatile: function does not return.
   68              		@ args = 0, pretend = 0, frame = 0
   69              		@ frame_needed = 0, uses_anonymous_args = 0
   70              	.LVL4:
-  71              		.loc 1 186 1 is_stmt 0 view .LVU7
+  71              		.loc 1 187 1 is_stmt 0 view .LVU7
   72 0000 08B5     		push	{r3, lr}
   73              	.LCFI1:
   74              		.cfi_def_cfa_offset 8
@@ -275,18 +276,19 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s 			page 1
   76              		.cfi_offset 14, -4
   77              	.LVL5:
   78              	.L5:
- 187:frameworks/f407/Core/Src/freertos.c ****   /* USER CODE BEGIN StartTask03 */
- 188:frameworks/f407/Core/Src/freertos.c ****   /* Infinite loop */
- 189:frameworks/f407/Core/Src/freertos.c ****   for(;;)
-  79              		.loc 1 189 3 is_stmt 1 discriminator 1 view .LVU8
- 190:frameworks/f407/Core/Src/freertos.c ****   {
- 191:frameworks/f407/Core/Src/freertos.c ****     osDelay(1);
-  80              		.loc 1 191 5 discriminator 1 view .LVU9
+ 188:frameworks/f407/Core/Src/freertos.c ****   /* USER CODE BEGIN StartTask03 */
+ 189:frameworks/f407/Core/Src/freertos.c ****   /* Infinite loop */
+ 190:frameworks/f407/Core/Src/freertos.c ****   for(;;)
+  79              		.loc 1 190 3 is_stmt 1 discriminator 1 view .LVU8
+ 191:frameworks/f407/Core/Src/freertos.c ****   {
+ 192:frameworks/f407/Core/Src/freertos.c ****     
+ 193:frameworks/f407/Core/Src/freertos.c ****     osDelay(1);
+  80              		.loc 1 193 5 discriminator 1 view .LVU9
   81 0002 0120     		movs	r0, #1
   82 0004 FFF7FEFF 		bl	osDelay
   83              	.LVL6:
- 189:frameworks/f407/Core/Src/freertos.c ****   {
-  84              		.loc 1 189 8 discriminator 1 view .LVU10
+ 190:frameworks/f407/Core/Src/freertos.c ****   {
+  84              		.loc 1 190 8 discriminator 1 view .LVU10
   85 0008 FBE7     		b	.L5
   86              		.cfi_endproc
   87              	.LFE249:
@@ -296,31 +298,31 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s 			page 1
   92              		.syntax unified
   93              		.thumb
   94              		.thumb_func
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s 			page 6
+
+
   96              	StartTask04:
   97              	.LFB250:
-ARM GAS  C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s 			page 6
-
-
- 192:frameworks/f407/Core/Src/freertos.c ****   }
- 193:frameworks/f407/Core/Src/freertos.c ****   /* USER CODE END StartTask03 */
- 194:frameworks/f407/Core/Src/freertos.c **** }
- 195:frameworks/f407/Core/Src/freertos.c **** 
- 196:frameworks/f407/Core/Src/freertos.c **** /* USER CODE BEGIN Header_StartTask04 */
- 197:frameworks/f407/Core/Src/freertos.c **** /**
- 198:frameworks/f407/Core/Src/freertos.c **** * @brief Function implementing the myTask04 thread.
- 199:frameworks/f407/Core/Src/freertos.c **** * @param argument: Not used
- 200:frameworks/f407/Core/Src/freertos.c **** * @retval None
- 201:frameworks/f407/Core/Src/freertos.c **** */
- 202:frameworks/f407/Core/Src/freertos.c **** /* USER CODE END Header_StartTask04 */
- 203:frameworks/f407/Core/Src/freertos.c **** void StartTask04(void *argument)
- 204:frameworks/f407/Core/Src/freertos.c **** {
-  98              		.loc 1 204 1 view -0
+ 194:frameworks/f407/Core/Src/freertos.c ****   }
+ 195:frameworks/f407/Core/Src/freertos.c ****   /* USER CODE END StartTask03 */
+ 196:frameworks/f407/Core/Src/freertos.c **** }
+ 197:frameworks/f407/Core/Src/freertos.c **** 
+ 198:frameworks/f407/Core/Src/freertos.c **** /* USER CODE BEGIN Header_StartTask04 */
+ 199:frameworks/f407/Core/Src/freertos.c **** /**
+ 200:frameworks/f407/Core/Src/freertos.c **** * @brief Function implementing the myTask04 thread.
+ 201:frameworks/f407/Core/Src/freertos.c **** * @param argument: Not used
+ 202:frameworks/f407/Core/Src/freertos.c **** * @retval None
+ 203:frameworks/f407/Core/Src/freertos.c **** */
+ 204:frameworks/f407/Core/Src/freertos.c **** /* USER CODE END Header_StartTask04 */
+ 205:frameworks/f407/Core/Src/freertos.c **** void StartTask04(void *argument)
+ 206:frameworks/f407/Core/Src/freertos.c **** {
+  98              		.loc 1 206 1 view -0
   99              		.cfi_startproc
  100              		@ Volatile: function does not return.
  101              		@ args = 0, pretend = 0, frame = 0
  102              		@ frame_needed = 0, uses_anonymous_args = 0
  103              	.LVL7:
- 104              		.loc 1 204 1 is_stmt 0 view .LVU12
+ 104              		.loc 1 206 1 is_stmt 0 view .LVU12
  105 0000 08B5     		push	{r3, lr}
  106              	.LCFI2:
  107              		.cfi_def_cfa_offset 8
@@ -328,18 +330,18 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s 			page 1
  109              		.cfi_offset 14, -4
  110              	.LVL8:
  111              	.L8:
- 205:frameworks/f407/Core/Src/freertos.c ****   /* USER CODE BEGIN StartTask04 */
- 206:frameworks/f407/Core/Src/freertos.c ****   /* Infinite loop */
- 207:frameworks/f407/Core/Src/freertos.c ****   for(;;)
- 112              		.loc 1 207 3 is_stmt 1 discriminator 1 view .LVU13
- 208:frameworks/f407/Core/Src/freertos.c ****   {
- 209:frameworks/f407/Core/Src/freertos.c ****     osDelay(1);
- 113              		.loc 1 209 5 discriminator 1 view .LVU14
+ 207:frameworks/f407/Core/Src/freertos.c ****   /* USER CODE BEGIN StartTask04 */
+ 208:frameworks/f407/Core/Src/freertos.c ****   /* Infinite loop */
+ 209:frameworks/f407/Core/Src/freertos.c ****   for(;;)
+ 112              		.loc 1 209 3 is_stmt 1 discriminator 1 view .LVU13
+ 210:frameworks/f407/Core/Src/freertos.c ****   {
+ 211:frameworks/f407/Core/Src/freertos.c ****     osDelay(1);
+ 113              		.loc 1 211 5 discriminator 1 view .LVU14
  114 0002 0120     		movs	r0, #1
  115 0004 FFF7FEFF 		bl	osDelay
  116              	.LVL9:
- 207:frameworks/f407/Core/Src/freertos.c ****   {
- 117              		.loc 1 207 8 discriminator 1 view .LVU15
+ 209:frameworks/f407/Core/Src/freertos.c ****   {
+ 117              		.loc 1 209 8 discriminator 1 view .LVU15
  118 0008 FBE7     		b	.L8
  119              		.cfi_endproc
  120              	.LFE250:
@@ -350,17 +352,17 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s 			page 1
  126              		.thumb
  127              		.thumb_func
  129              	StartTask02:
- 130              	.LFB248:
+ 130              	.LVL10:
+ 131              	.LFB248:
  167:frameworks/f407/Core/Src/freertos.c ****   /* USER CODE BEGIN StartTask02 */
- 131              		.loc 1 167 1 view -0
- 132              		.cfi_startproc
- 133              		@ Volatile: function does not return.
- 134              		@ args = 0, pretend = 0, frame = 0
- 135              		@ frame_needed = 0, uses_anonymous_args = 0
- 136              	.LVL10:
-ARM GAS  C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s 			page 7
+ 132              		.loc 1 167 1 view -0
+ 133              		.cfi_startproc
+ 134              		@ Volatile: function does not return.
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s 			page 7
 
 
+ 135              		@ args = 0, pretend = 0, frame = 0
+ 136              		@ frame_needed = 0, uses_anonymous_args = 0
  167:frameworks/f407/Core/Src/freertos.c ****   /* USER CODE BEGIN StartTask02 */
  137              		.loc 1 167 1 is_stmt 0 view .LVU17
  138 0000 08B5     		push	{r3, lr}
@@ -368,263 +370,273 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s 			page 1
  140              		.cfi_def_cfa_offset 8
  141              		.cfi_offset 3, -8
  142              		.cfi_offset 14, -4
- 143              	.LVL11:
- 144              	.L11:
- 170:frameworks/f407/Core/Src/freertos.c ****   {
- 145              		.loc 1 170 3 is_stmt 1 discriminator 1 view .LVU18
- 172:frameworks/f407/Core/Src/freertos.c ****     osDelay(1);
- 146              		.loc 1 172 5 discriminator 1 view .LVU19
- 147 0002 FFF7FEFF 		bl	app_debug
+ 169:frameworks/f407/Core/Src/freertos.c ****   /* Infinite loop */
+ 143              		.loc 1 169 3 is_stmt 1 view .LVU18
+ 144 0002 40F6B830 		movw	r0, #3000
+ 145              	.LVL11:
+ 169:frameworks/f407/Core/Src/freertos.c ****   /* Infinite loop */
+ 146              		.loc 1 169 3 is_stmt 0 view .LVU19
+ 147 0006 FFF7FEFF 		bl	osDelay
  148              	.LVL12:
- 173:frameworks/f407/Core/Src/freertos.c ****   }
- 149              		.loc 1 173 5 discriminator 1 view .LVU20
- 150 0006 0120     		movs	r0, #1
- 151 0008 FFF7FEFF 		bl	osDelay
- 152              	.LVL13:
- 170:frameworks/f407/Core/Src/freertos.c ****   {
- 153              		.loc 1 170 8 discriminator 1 view .LVU21
- 154 000c F9E7     		b	.L11
- 155              		.cfi_endproc
- 156              	.LFE248:
- 158              		.section	.text.MX_FREERTOS_Init,"ax",%progbits
- 159              		.align	1
- 160              		.global	MX_FREERTOS_Init
- 161              		.syntax unified
- 162              		.thumb
- 163              		.thumb_func
- 165              	MX_FREERTOS_Init:
- 166              	.LFB246:
+ 149              	.L11:
+ 171:frameworks/f407/Core/Src/freertos.c ****   {
+ 150              		.loc 1 171 3 is_stmt 1 discriminator 1 view .LVU20
+ 173:frameworks/f407/Core/Src/freertos.c ****     osDelay(10);
+ 151              		.loc 1 173 5 discriminator 1 view .LVU21
+ 152 000a FFF7FEFF 		bl	app_debug
+ 153              	.LVL13:
+ 174:frameworks/f407/Core/Src/freertos.c ****   }
+ 154              		.loc 1 174 5 discriminator 1 view .LVU22
+ 155 000e 0A20     		movs	r0, #10
+ 156 0010 FFF7FEFF 		bl	osDelay
+ 157              	.LVL14:
+ 171:frameworks/f407/Core/Src/freertos.c ****   {
+ 158              		.loc 1 171 8 discriminator 1 view .LVU23
+ 159 0014 F9E7     		b	.L11
+ 160              		.cfi_endproc
+ 161              	.LFE248:
+ 163              		.section	.text.MX_FREERTOS_Init,"ax",%progbits
+ 164              		.align	1
+ 165              		.global	MX_FREERTOS_Init
+ 166              		.syntax unified
+ 167              		.thumb
+ 168              		.thumb_func
+ 170              	MX_FREERTOS_Init:
+ 171              	.LFB246:
   96:frameworks/f407/Core/Src/freertos.c ****   /* USER CODE BEGIN Init */
- 167              		.loc 1 96 29 view -0
- 168              		.cfi_startproc
- 169              		@ args = 0, pretend = 0, frame = 0
- 170              		@ frame_needed = 0, uses_anonymous_args = 0
- 171 0000 08B5     		push	{r3, lr}
- 172              	.LCFI4:
- 173              		.cfi_def_cfa_offset 8
- 174              		.cfi_offset 3, -8
- 175              		.cfi_offset 14, -4
+ 172              		.loc 1 96 29 view -0
+ 173              		.cfi_startproc
+ 174              		@ args = 0, pretend = 0, frame = 0
+ 175              		@ frame_needed = 0, uses_anonymous_args = 0
+ 176 0000 08B5     		push	{r3, lr}
+ 177              	.LCFI4:
+ 178              		.cfi_def_cfa_offset 8
+ 179              		.cfi_offset 3, -8
+ 180              		.cfi_offset 14, -4
  119:frameworks/f407/Core/Src/freertos.c **** 
- 176              		.loc 1 119 3 view .LVU23
+ 181              		.loc 1 119 3 view .LVU25
  119:frameworks/f407/Core/Src/freertos.c **** 
- 177              		.loc 1 119 23 is_stmt 0 view .LVU24
- 178 0002 0E4A     		ldr	r2, .L15
- 179 0004 0021     		movs	r1, #0
- 180 0006 0E48     		ldr	r0, .L15+4
- 181 0008 FFF7FEFF 		bl	osThreadNew
- 182              	.LVL14:
- 119:frameworks/f407/Core/Src/freertos.c **** 
- 183              		.loc 1 119 21 view .LVU25
- 184 000c 0D4B     		ldr	r3, .L15+8
- 185 000e 1860     		str	r0, [r3]
- 122:frameworks/f407/Core/Src/freertos.c **** 
-ARM GAS  C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s 			page 8
+ 182              		.loc 1 119 23 is_stmt 0 view .LVU26
+ 183 0002 0E4A     		ldr	r2, .L15
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s 			page 8
 
 
- 186              		.loc 1 122 3 is_stmt 1 view .LVU26
+ 184 0004 0021     		movs	r1, #0
+ 185 0006 0E48     		ldr	r0, .L15+4
+ 186 0008 FFF7FEFF 		bl	osThreadNew
+ 187              	.LVL15:
+ 119:frameworks/f407/Core/Src/freertos.c **** 
+ 188              		.loc 1 119 21 view .LVU27
+ 189 000c 0D4B     		ldr	r3, .L15+8
+ 190 000e 1860     		str	r0, [r3]
  122:frameworks/f407/Core/Src/freertos.c **** 
- 187              		.loc 1 122 20 is_stmt 0 view .LVU27
- 188 0010 0D4A     		ldr	r2, .L15+12
- 189 0012 0021     		movs	r1, #0
- 190 0014 0D48     		ldr	r0, .L15+16
- 191 0016 FFF7FEFF 		bl	osThreadNew
- 192              	.LVL15:
+ 191              		.loc 1 122 3 is_stmt 1 view .LVU28
  122:frameworks/f407/Core/Src/freertos.c **** 
- 193              		.loc 1 122 18 view .LVU28
- 194 001a 0D4B     		ldr	r3, .L15+20
- 195 001c 1860     		str	r0, [r3]
+ 192              		.loc 1 122 20 is_stmt 0 view .LVU29
+ 193 0010 0D4A     		ldr	r2, .L15+12
+ 194 0012 0021     		movs	r1, #0
+ 195 0014 0D48     		ldr	r0, .L15+16
+ 196 0016 FFF7FEFF 		bl	osThreadNew
+ 197              	.LVL16:
+ 122:frameworks/f407/Core/Src/freertos.c **** 
+ 198              		.loc 1 122 18 view .LVU30
+ 199 001a 0D4B     		ldr	r3, .L15+20
+ 200 001c 1860     		str	r0, [r3]
  125:frameworks/f407/Core/Src/freertos.c **** 
- 196              		.loc 1 125 3 is_stmt 1 view .LVU29
+ 201              		.loc 1 125 3 is_stmt 1 view .LVU31
  125:frameworks/f407/Core/Src/freertos.c **** 
- 197              		.loc 1 125 20 is_stmt 0 view .LVU30
- 198 001e 0D4A     		ldr	r2, .L15+24
- 199 0020 0021     		movs	r1, #0
- 200 0022 0D48     		ldr	r0, .L15+28
- 201 0024 FFF7FEFF 		bl	osThreadNew
- 202              	.LVL16:
+ 202              		.loc 1 125 20 is_stmt 0 view .LVU32
+ 203 001e 0D4A     		ldr	r2, .L15+24
+ 204 0020 0021     		movs	r1, #0
+ 205 0022 0D48     		ldr	r0, .L15+28
+ 206 0024 FFF7FEFF 		bl	osThreadNew
+ 207              	.LVL17:
  125:frameworks/f407/Core/Src/freertos.c **** 
- 203              		.loc 1 125 18 view .LVU31
- 204 0028 0C4B     		ldr	r3, .L15+32
- 205 002a 1860     		str	r0, [r3]
+ 208              		.loc 1 125 18 view .LVU33
+ 209 0028 0C4B     		ldr	r3, .L15+32
+ 210 002a 1860     		str	r0, [r3]
  128:frameworks/f407/Core/Src/freertos.c **** 
- 206              		.loc 1 128 3 is_stmt 1 view .LVU32
+ 211              		.loc 1 128 3 is_stmt 1 view .LVU34
  128:frameworks/f407/Core/Src/freertos.c **** 
- 207              		.loc 1 128 20 is_stmt 0 view .LVU33
- 208 002c 0C4A     		ldr	r2, .L15+36
- 209 002e 0021     		movs	r1, #0
- 210 0030 0C48     		ldr	r0, .L15+40
- 211 0032 FFF7FEFF 		bl	osThreadNew
- 212              	.LVL17:
+ 212              		.loc 1 128 20 is_stmt 0 view .LVU35
+ 213 002c 0C4A     		ldr	r2, .L15+36
+ 214 002e 0021     		movs	r1, #0
+ 215 0030 0C48     		ldr	r0, .L15+40
+ 216 0032 FFF7FEFF 		bl	osThreadNew
+ 217              	.LVL18:
  128:frameworks/f407/Core/Src/freertos.c **** 
- 213              		.loc 1 128 18 view .LVU34
- 214 0036 0C4B     		ldr	r3, .L15+44
- 215 0038 1860     		str	r0, [r3]
+ 218              		.loc 1 128 18 view .LVU36
+ 219 0036 0C4B     		ldr	r3, .L15+44
+ 220 0038 1860     		str	r0, [r3]
  138:frameworks/f407/Core/Src/freertos.c **** 
- 216              		.loc 1 138 1 view .LVU35
- 217 003a 08BD     		pop	{r3, pc}
- 218              	.L16:
- 219              		.align	2
- 220              	.L15:
- 221 003c 00000000 		.word	.LANCHOR0
- 222 0040 00000000 		.word	StartDefaultTask
- 223 0044 00000000 		.word	.LANCHOR1
- 224 0048 00000000 		.word	.LANCHOR2
- 225 004c 00000000 		.word	StartTask02
- 226 0050 00000000 		.word	.LANCHOR3
- 227 0054 00000000 		.word	.LANCHOR4
- 228 0058 00000000 		.word	StartTask03
- 229 005c 00000000 		.word	.LANCHOR5
- 230 0060 00000000 		.word	.LANCHOR6
- 231 0064 00000000 		.word	StartTask04
- 232 0068 00000000 		.word	.LANCHOR7
- 233              		.cfi_endproc
-ARM GAS  C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s 			page 9
+ 221              		.loc 1 138 1 view .LVU37
+ 222 003a 08BD     		pop	{r3, pc}
+ 223              	.L16:
+ 224              		.align	2
+ 225              	.L15:
+ 226 003c 00000000 		.word	.LANCHOR0
+ 227 0040 00000000 		.word	StartDefaultTask
+ 228 0044 00000000 		.word	.LANCHOR1
+ 229 0048 00000000 		.word	.LANCHOR2
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s 			page 9
 
 
- 234              	.LFE246:
- 236              		.global	myTask04_attributes
- 237              		.section	.rodata.str1.4,"aMS",%progbits,1
- 238              		.align	2
- 239              	.LC0:
- 240 0000 6D795461 		.ascii	"myTask04\000"
- 240      736B3034 
- 240      00
- 241              		.global	myTask04Handle
- 242              		.global	myTask03_attributes
- 243 0009 000000   		.align	2
- 244              	.LC1:
- 245 000c 6D795461 		.ascii	"myTask03\000"
- 245      736B3033 
+ 230 004c 00000000 		.word	StartTask02
+ 231 0050 00000000 		.word	.LANCHOR3
+ 232 0054 00000000 		.word	.LANCHOR4
+ 233 0058 00000000 		.word	StartTask03
+ 234 005c 00000000 		.word	.LANCHOR5
+ 235 0060 00000000 		.word	.LANCHOR6
+ 236 0064 00000000 		.word	StartTask04
+ 237 0068 00000000 		.word	.LANCHOR7
+ 238              		.cfi_endproc
+ 239              	.LFE246:
+ 241              		.global	myTask04_attributes
+ 242              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 243              		.align	2
+ 244              	.LC0:
+ 245 0000 6D795461 		.ascii	"myTask04\000"
+ 245      736B3034 
  245      00
- 246              		.global	myTask03Handle
- 247              		.global	myTask02_attributes
- 248 0015 000000   		.align	2
- 249              	.LC2:
- 250 0018 6D795461 		.ascii	"myTask02\000"
- 250      736B3032 
+ 246              		.global	myTask04Handle
+ 247              		.global	myTask03_attributes
+ 248 0009 000000   		.align	2
+ 249              	.LC1:
+ 250 000c 6D795461 		.ascii	"myTask03\000"
+ 250      736B3033 
  250      00
- 251              		.global	myTask02Handle
- 252              		.global	defaultTask_attributes
- 253 0021 000000   		.align	2
- 254              	.LC3:
- 255 0024 64656661 		.ascii	"defaultTask\000"
- 255      756C7454 
- 255      61736B00 
- 256              		.global	defaultTaskHandle
- 257              		.section	.bss.defaultTaskHandle,"aw",%nobits
- 258              		.align	2
- 259              		.set	.LANCHOR1,. + 0
- 262              	defaultTaskHandle:
- 263 0000 00000000 		.space	4
- 264              		.section	.bss.myTask02Handle,"aw",%nobits
- 265              		.align	2
- 266              		.set	.LANCHOR3,. + 0
- 269              	myTask02Handle:
- 270 0000 00000000 		.space	4
- 271              		.section	.bss.myTask03Handle,"aw",%nobits
- 272              		.align	2
- 273              		.set	.LANCHOR5,. + 0
- 276              	myTask03Handle:
- 277 0000 00000000 		.space	4
- 278              		.section	.bss.myTask04Handle,"aw",%nobits
- 279              		.align	2
- 280              		.set	.LANCHOR7,. + 0
- 283              	myTask04Handle:
- 284 0000 00000000 		.space	4
- 285              		.section	.rodata.defaultTask_attributes,"a"
- 286              		.align	2
- 287              		.set	.LANCHOR0,. + 0
- 290              	defaultTask_attributes:
- 291 0000 24000000 		.word	.LC3
- 292 0004 00000000 		.space	16
- 292      00000000 
-ARM GAS  C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s 			page 10
+ 251              		.global	myTask03Handle
+ 252              		.global	myTask02_attributes
+ 253 0015 000000   		.align	2
+ 254              	.LC2:
+ 255 0018 6D795461 		.ascii	"myTask02\000"
+ 255      736B3032 
+ 255      00
+ 256              		.global	myTask02Handle
+ 257              		.global	defaultTask_attributes
+ 258 0021 000000   		.align	2
+ 259              	.LC3:
+ 260 0024 64656661 		.ascii	"defaultTask\000"
+ 260      756C7454 
+ 260      61736B00 
+ 261              		.global	defaultTaskHandle
+ 262              		.section	.bss.defaultTaskHandle,"aw",%nobits
+ 263              		.align	2
+ 264              		.set	.LANCHOR1,. + 0
+ 267              	defaultTaskHandle:
+ 268 0000 00000000 		.space	4
+ 269              		.section	.bss.myTask02Handle,"aw",%nobits
+ 270              		.align	2
+ 271              		.set	.LANCHOR3,. + 0
+ 274              	myTask02Handle:
+ 275 0000 00000000 		.space	4
+ 276              		.section	.bss.myTask03Handle,"aw",%nobits
+ 277              		.align	2
+ 278              		.set	.LANCHOR5,. + 0
+ 281              	myTask03Handle:
+ 282 0000 00000000 		.space	4
+ 283              		.section	.bss.myTask04Handle,"aw",%nobits
+ 284              		.align	2
+ 285              		.set	.LANCHOR7,. + 0
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s 			page 10
 
 
- 292      00000000 
- 292      00000000 
- 293 0014 00040000 		.word	1024
- 294 0018 18000000 		.word	24
- 295 001c 00000000 		.space	8
- 295      00000000 
- 296              		.section	.rodata.myTask02_attributes,"a"
- 297              		.align	2
- 298              		.set	.LANCHOR2,. + 0
- 301              	myTask02_attributes:
- 302 0000 18000000 		.word	.LC2
- 303 0004 00000000 		.space	16
- 303      00000000 
- 303      00000000 
- 303      00000000 
- 304 0014 00040000 		.word	1024
- 305 0018 08000000 		.word	8
- 306 001c 00000000 		.space	8
- 306      00000000 
- 307              		.section	.rodata.myTask03_attributes,"a"
- 308              		.align	2
- 309              		.set	.LANCHOR4,. + 0
- 312              	myTask03_attributes:
- 313 0000 0C000000 		.word	.LC1
- 314 0004 00000000 		.space	16
- 314      00000000 
- 314      00000000 
- 314      00000000 
- 315 0014 00040000 		.word	1024
- 316 0018 08000000 		.word	8
- 317 001c 00000000 		.space	8
- 317      00000000 
- 318              		.section	.rodata.myTask04_attributes,"a"
- 319              		.align	2
- 320              		.set	.LANCHOR6,. + 0
- 323              	myTask04_attributes:
- 324 0000 00000000 		.word	.LC0
- 325 0004 00000000 		.space	16
- 325      00000000 
- 325      00000000 
- 325      00000000 
- 326 0014 00040000 		.word	1024
- 327 0018 08000000 		.word	8
- 328 001c 00000000 		.space	8
- 328      00000000 
- 329              		.text
- 330              	.Letext0:
- 331              		.file 2 "e:\\ng_circumstance\\arm\\arm-none-eabi\\include\\machine\\_default_types.h"
- 332              		.file 3 "e:\\ng_circumstance\\arm\\arm-none-eabi\\include\\sys\\_stdint.h"
- 333              		.file 4 "frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h"
- 334              		.file 5 "APP/app.h"
-ARM GAS  C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s 			page 11
+ 288              	myTask04Handle:
+ 289 0000 00000000 		.space	4
+ 290              		.section	.rodata.defaultTask_attributes,"a"
+ 291              		.align	2
+ 292              		.set	.LANCHOR0,. + 0
+ 295              	defaultTask_attributes:
+ 296 0000 24000000 		.word	.LC3
+ 297 0004 00000000 		.space	16
+ 297      00000000 
+ 297      00000000 
+ 297      00000000 
+ 298 0014 00040000 		.word	1024
+ 299 0018 18000000 		.word	24
+ 300 001c 00000000 		.space	8
+ 300      00000000 
+ 301              		.section	.rodata.myTask02_attributes,"a"
+ 302              		.align	2
+ 303              		.set	.LANCHOR2,. + 0
+ 306              	myTask02_attributes:
+ 307 0000 18000000 		.word	.LC2
+ 308 0004 00000000 		.space	16
+ 308      00000000 
+ 308      00000000 
+ 308      00000000 
+ 309 0014 00040000 		.word	1024
+ 310 0018 08000000 		.word	8
+ 311 001c 00000000 		.space	8
+ 311      00000000 
+ 312              		.section	.rodata.myTask03_attributes,"a"
+ 313              		.align	2
+ 314              		.set	.LANCHOR4,. + 0
+ 317              	myTask03_attributes:
+ 318 0000 0C000000 		.word	.LC1
+ 319 0004 00000000 		.space	16
+ 319      00000000 
+ 319      00000000 
+ 319      00000000 
+ 320 0014 00040000 		.word	1024
+ 321 0018 08000000 		.word	8
+ 322 001c 00000000 		.space	8
+ 322      00000000 
+ 323              		.section	.rodata.myTask04_attributes,"a"
+ 324              		.align	2
+ 325              		.set	.LANCHOR6,. + 0
+ 328              	myTask04_attributes:
+ 329 0000 00000000 		.word	.LC0
+ 330 0004 00000000 		.space	16
+ 330      00000000 
+ 330      00000000 
+ 330      00000000 
+ 331 0014 00040000 		.word	1024
+ 332 0018 08000000 		.word	8
+ 333 001c 00000000 		.space	8
+ 333      00000000 
+ 334              		.text
+ 335              	.Letext0:
+ 336              		.file 2 "e:\\ng_circumstance\\arm\\arm-none-eabi\\include\\machine\\_default_types.h"
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s 			page 11
+
+
+ 337              		.file 3 "e:\\ng_circumstance\\arm\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 338              		.file 4 "frameworks/f407/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h"
+ 339              		.file 5 "APP/app.h"
+ARM GAS  C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s 			page 12
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 freertos.c
-C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s:20     .text.StartDefaultTask:00000000 $t
-C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s:26     .text.StartDefaultTask:00000000 StartDefaultTask
-C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s:57     .text.StartTask03:00000000 $t
-C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s:63     .text.StartTask03:00000000 StartTask03
-C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s:90     .text.StartTask04:00000000 $t
-C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s:96     .text.StartTask04:00000000 StartTask04
-C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s:123    .text.StartTask02:00000000 $t
-C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s:129    .text.StartTask02:00000000 StartTask02
-C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s:159    .text.MX_FREERTOS_Init:00000000 $t
-C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s:165    .text.MX_FREERTOS_Init:00000000 MX_FREERTOS_Init
-C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s:221    .text.MX_FREERTOS_Init:0000003c $d
-C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s:323    .rodata.myTask04_attributes:00000000 myTask04_attributes
-C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s:238    .rodata.str1.4:00000000 $d
-C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s:283    .bss.myTask04Handle:00000000 myTask04Handle
-C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s:312    .rodata.myTask03_attributes:00000000 myTask03_attributes
-C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s:276    .bss.myTask03Handle:00000000 myTask03Handle
-C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s:301    .rodata.myTask02_attributes:00000000 myTask02_attributes
-C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s:269    .bss.myTask02Handle:00000000 myTask02Handle
-C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s:290    .rodata.defaultTask_attributes:00000000 defaultTask_attributes
-C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s:262    .bss.defaultTaskHandle:00000000 defaultTaskHandle
-C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s:258    .bss.defaultTaskHandle:00000000 $d
-C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s:265    .bss.myTask02Handle:00000000 $d
-C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s:272    .bss.myTask03Handle:00000000 $d
-C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s:279    .bss.myTask04Handle:00000000 $d
-C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s:286    .rodata.defaultTask_attributes:00000000 $d
-C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s:297    .rodata.myTask02_attributes:00000000 $d
-C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s:308    .rodata.myTask03_attributes:00000000 $d
-C:\Users\honor\AppData\Local\Temp\ccuC2iOj.s:319    .rodata.myTask04_attributes:00000000 $d
+C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s:20     .text.StartDefaultTask:00000000 $t
+C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s:26     .text.StartDefaultTask:00000000 StartDefaultTask
+C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s:57     .text.StartTask03:00000000 $t
+C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s:63     .text.StartTask03:00000000 StartTask03
+C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s:90     .text.StartTask04:00000000 $t
+C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s:96     .text.StartTask04:00000000 StartTask04
+C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s:123    .text.StartTask02:00000000 $t
+C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s:129    .text.StartTask02:00000000 StartTask02
+C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s:164    .text.MX_FREERTOS_Init:00000000 $t
+C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s:170    .text.MX_FREERTOS_Init:00000000 MX_FREERTOS_Init
+C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s:226    .text.MX_FREERTOS_Init:0000003c $d
+C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s:328    .rodata.myTask04_attributes:00000000 myTask04_attributes
+C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s:243    .rodata.str1.4:00000000 $d
+C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s:288    .bss.myTask04Handle:00000000 myTask04Handle
+C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s:317    .rodata.myTask03_attributes:00000000 myTask03_attributes
+C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s:281    .bss.myTask03Handle:00000000 myTask03Handle
+C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s:306    .rodata.myTask02_attributes:00000000 myTask02_attributes
+C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s:274    .bss.myTask02Handle:00000000 myTask02Handle
+C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s:295    .rodata.defaultTask_attributes:00000000 defaultTask_attributes
+C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s:267    .bss.defaultTaskHandle:00000000 defaultTaskHandle
+C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s:263    .bss.defaultTaskHandle:00000000 $d
+C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s:270    .bss.myTask02Handle:00000000 $d
+C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s:277    .bss.myTask03Handle:00000000 $d
+C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s:284    .bss.myTask04Handle:00000000 $d
+C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s:291    .rodata.defaultTask_attributes:00000000 $d
+C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s:302    .rodata.myTask02_attributes:00000000 $d
+C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s:313    .rodata.myTask03_attributes:00000000 $d
+C:\Users\honor\AppData\Local\Temp\ccGOpW0z.s:324    .rodata.myTask04_attributes:00000000 $d
 
 UNDEFINED SYMBOLS
 app_loop

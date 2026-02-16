@@ -93,7 +93,8 @@ hal_bsp/bsp/bsp.c \
 APP/robot_cmd.c \
 hal_bsp/hal/driver/spi_oled/ax_oled_1305.c \
 hal_bsp/hal/driver/remote/sbus_ht10a.c \
-hal_bsp/hal/driver/motor/pwm_motor.c
+hal_bsp/hal/driver/motor/pwm_motor.c \
+hal_bsp/hal/driver/buzzer/buzzer.c 
 
 
 # ASM sources
@@ -170,7 +171,8 @@ C_INCLUDES +=  \
 -Ihal_bsp/bsp \
 -Ihal_bsp/hal/driver/spi_oled \
 -Ihal_bsp/hal/driver/remote \
--Ihal_bsp/hal/driver/motor
+-Ihal_bsp/hal/driver/motor \
+-Ihal_bsp/hal/driver/buzzer
 
 
 # compile gcc flags

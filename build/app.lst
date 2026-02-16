@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\honor\AppData\Local\Temp\ccm1ihcd.s 			page 1
+ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3NFLhy.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -19,15 +19,38 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\ccm1ihcd.s 			page 1
   16              		.text
   17              	.Ltext0:
   18              		.cfi_sections	.debug_frame
-  19              		.section	.text.app_init,"ax",%progbits
-  20              		.align	1
-  21              		.global	app_init
-  22              		.syntax unified
-  23              		.thumb
-  24              		.thumb_func
-  26              	app_init:
-  27              	.LFB246:
-  28              		.file 1 "APP/app.c"
+  19              		.section	.rodata.app_init.str1.4,"aMS",%progbits,1
+  20              		.align	2
+  21              	.LC0:
+  22 0000 E5A4A7E5 		.ascii	"\345\244\247\345\256\266\345\245\275\357\274\214\346"
+  22      AEB6E5A5 
+  22      BDEFBC8C 
+  22      E6
+  23 000d 8891E698 		.ascii	"\210\221\346\230\257\345\210\230\345\260\217\345\270"
+  23      AFE58898 
+  23      E5B08FE5 
+  23      B8
+  24 001a 85EFBC8C 		.ascii	"\205\357\274\214\346\235\245\347\234\213\346\210\221"
+  24      E69DA5E7 
+  24      9C8BE688 
+  24      91
+  25 0027 E8A1A8E6 		.ascii	"\350\241\250\346\274\224\345\226\275\000"
+  25      BC94E596 
+  25      BD00
+  26 0031 000000   		.align	2
+  27              	.LC1:
+  28 0034 6170705F 		.ascii	"app_init\015\000"
+  28      696E6974 
+  28      0D00
+  29              		.section	.text.app_init,"ax",%progbits
+  30              		.align	1
+  31              		.global	app_init
+  32              		.syntax unified
+  33              		.thumb
+  34              		.thumb_func
+  36              	app_init:
+  37              	.LFB246:
+  38              		.file 1 "APP/app.c"
    1:APP/app.c     **** #include "app.h"
    2:APP/app.c     **** #include "robot_cmd.h"
    3:APP/app.c     **** #include <stdio.h>
@@ -35,110 +58,191 @@ ARM GAS  C:\Users\honor\AppData\Local\Temp\ccm1ihcd.s 			page 1
    5:APP/app.c     **** #include "hal.h"
    6:APP/app.c     **** #include "pwm_motor.h"
    7:APP/app.c     **** #include "tim.h"
-   8:APP/app.c     **** 
-   9:APP/app.c     **** void app_init(void)
-  10:APP/app.c     **** {
-  29              		.loc 1 10 1 view -0
-  30              		.cfi_startproc
-  31              		@ args = 0, pretend = 0, frame = 0
-  32              		@ frame_needed = 0, uses_anonymous_args = 0
-  33 0000 08B5     		push	{r3, lr}
-  34              	.LCFI0:
-  35              		.cfi_def_cfa_offset 8
-  36              		.cfi_offset 3, -8
-  37              		.cfi_offset 14, -4
-  11:APP/app.c     ****     // printf("app_init\r\n");
-  12:APP/app.c     ****     robot_cmd_init();
-  38              		.loc 1 12 5 view .LVU1
-  39 0002 FFF7FEFF 		bl	robot_cmd_init
-  40              	.LVL0:
-  13:APP/app.c     ****     motor_init();
-  41              		.loc 1 13 5 view .LVU2
-  42 0006 FFF7FEFF 		bl	motor_init
-  43              	.LVL1:
-  14:APP/app.c     **** 
-  15:APP/app.c     **** 
-ARM GAS  C:\Users\honor\AppData\Local\Temp\ccm1ihcd.s 			page 2
+ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3NFLhy.s 			page 2
 
 
-  16:APP/app.c     **** 
-  17:APP/app.c     **** 
-  18:APP/app.c     **** }
-  44              		.loc 1 18 1 is_stmt 0 view .LVU3
-  45 000a 08BD     		pop	{r3, pc}
-  46              		.cfi_endproc
-  47              	.LFE246:
-  49              		.section	.text.app_loop,"ax",%progbits
-  50              		.align	1
-  51              		.global	app_loop
-  52              		.syntax unified
-  53              		.thumb
-  54              		.thumb_func
-  56              	app_loop:
-  57              	.LFB247:
+   8:APP/app.c     **** #include "buzzer.h"
+   9:APP/app.c     **** 
+  10:APP/app.c     **** Robot_cmd *cmd;
+  11:APP/app.c     **** void app_init(void)
+  12:APP/app.c     **** {
+  39              		.loc 1 12 1 view -0
+  40              		.cfi_startproc
+  41              		@ args = 0, pretend = 0, frame = 0
+  42              		@ frame_needed = 0, uses_anonymous_args = 0
+  43 0000 08B5     		push	{r3, lr}
+  44              	.LCFI0:
+  45              		.cfi_def_cfa_offset 8
+  46              		.cfi_offset 3, -8
+  47              		.cfi_offset 14, -4
+  13:APP/app.c     **** 
+  14:APP/app.c     ****     cmd = robot_cmd_init();
+  48              		.loc 1 14 5 view .LVU1
+  49              		.loc 1 14 11 is_stmt 0 view .LVU2
+  50 0002 FFF7FEFF 		bl	robot_cmd_init
+  51              	.LVL0:
+  52              		.loc 1 14 9 view .LVU3
+  53 0006 064B     		ldr	r3, .L3
+  54 0008 1860     		str	r0, [r3]
+  15:APP/app.c     ****     bsp_voice_init(&huart3);
+  55              		.loc 1 15 5 is_stmt 1 view .LVU4
+  56 000a 0648     		ldr	r0, .L3+4
+  57 000c FFF7FEFF 		bl	bsp_voice_init
+  58              	.LVL1:
+  16:APP/app.c     ****     bsp_voice_send_msg("大家好，我是刘小帅，来看我表演喽");
+  59              		.loc 1 16 5 view .LVU5
+  60 0010 0548     		ldr	r0, .L3+8
+  61 0012 FFF7FEFF 		bl	bsp_voice_send_msg
+  62              	.LVL2:
+  17:APP/app.c     ****     printf("app_init\r\n");
+  63              		.loc 1 17 5 view .LVU6
+  64 0016 0548     		ldr	r0, .L3+12
+  65 0018 FFF7FEFF 		bl	puts
+  66              	.LVL3:
+  18:APP/app.c     ****     
   19:APP/app.c     **** 
-  20:APP/app.c     **** void app_loop(void)
-  21:APP/app.c     **** {
-  58              		.loc 1 21 1 is_stmt 1 view -0
-  59              		.cfi_startproc
-  60              		@ args = 0, pretend = 0, frame = 0
-  61              		@ frame_needed = 0, uses_anonymous_args = 0
-  62 0000 08B5     		push	{r3, lr}
-  63              	.LCFI1:
-  64              		.cfi_def_cfa_offset 8
-  65              		.cfi_offset 3, -8
-  66              		.cfi_offset 14, -4
-  22:APP/app.c     ****     robot_cmd_update();
-  67              		.loc 1 22 5 view .LVU5
-  68 0002 FFF7FEFF 		bl	robot_cmd_update
-  69              	.LVL2:
-  23:APP/app.c     **** }
-  70              		.loc 1 23 1 is_stmt 0 view .LVU6
-  71 0006 08BD     		pop	{r3, pc}
-  72              		.cfi_endproc
-  73              	.LFE247:
-  75              		.section	.text.app_debug,"ax",%progbits
-  76              		.align	1
-  77              		.global	app_debug
-  78              		.syntax unified
-  79              		.thumb
-  80              		.thumb_func
-  82              	app_debug:
-  83              	.LFB248:
-  24:APP/app.c     **** 
-  25:APP/app.c     **** void app_debug(void)
-  26:APP/app.c     **** {
-  84              		.loc 1 26 1 is_stmt 1 view -0
-  85              		.cfi_startproc
-  86              		@ args = 0, pretend = 0, frame = 0
-  87              		@ frame_needed = 0, uses_anonymous_args = 0
-  88              		@ link register save eliminated.
-  27:APP/app.c     **** 
-  28:APP/app.c     **** }
-  89              		.loc 1 28 1 view .LVU8
-  90 0000 7047     		bx	lr
-  91              		.cfi_endproc
-ARM GAS  C:\Users\honor\AppData\Local\Temp\ccm1ihcd.s 			page 3
+  20:APP/app.c     **** }
+  67              		.loc 1 20 1 is_stmt 0 view .LVU7
+  68 001c 08BD     		pop	{r3, pc}
+  69              	.L4:
+  70 001e 00BF     		.align	2
+  71              	.L3:
+  72 0020 00000000 		.word	.LANCHOR0
+  73 0024 00000000 		.word	huart3
+  74 0028 00000000 		.word	.LC0
+  75 002c 34000000 		.word	.LC1
+  76              		.cfi_endproc
+  77              	.LFE246:
+  79              		.section	.text.app_loop,"ax",%progbits
+  80              		.align	1
+  81              		.global	app_loop
+  82              		.syntax unified
+  83              		.thumb
+ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3NFLhy.s 			page 3
 
 
-  92              	.LFE248:
-  94              		.text
-  95              	.Letext0:
-  96              		.file 2 "APP/robot_cmd.h"
-  97              		.file 3 "hal_bsp/hal/driver/motor/pwm_motor.h"
-ARM GAS  C:\Users\honor\AppData\Local\Temp\ccm1ihcd.s 			page 4
+  84              		.thumb_func
+  86              	app_loop:
+  87              	.LFB247:
+  21:APP/app.c     **** 
+  22:APP/app.c     **** void app_loop(void)
+  23:APP/app.c     **** {
+  88              		.loc 1 23 1 is_stmt 1 view -0
+  89              		.cfi_startproc
+  90              		@ args = 0, pretend = 0, frame = 0
+  91              		@ frame_needed = 0, uses_anonymous_args = 0
+  92 0000 08B5     		push	{r3, lr}
+  93              	.LCFI1:
+  94              		.cfi_def_cfa_offset 8
+  95              		.cfi_offset 3, -8
+  96              		.cfi_offset 14, -4
+  24:APP/app.c     ****     robot_cmd_update(cmd);
+  97              		.loc 1 24 5 view .LVU9
+  98 0002 024B     		ldr	r3, .L7
+  99 0004 1868     		ldr	r0, [r3]
+ 100 0006 FFF7FEFF 		bl	robot_cmd_update
+ 101              	.LVL4:
+  25:APP/app.c     **** }
+ 102              		.loc 1 25 1 is_stmt 0 view .LVU10
+ 103 000a 08BD     		pop	{r3, pc}
+ 104              	.L8:
+ 105              		.align	2
+ 106              	.L7:
+ 107 000c 00000000 		.word	.LANCHOR0
+ 108              		.cfi_endproc
+ 109              	.LFE247:
+ 111              		.section	.rodata.app_debug.str1.4,"aMS",%progbits,1
+ 112              		.align	2
+ 113              	.LC2:
+ 114 0000 6170705F 		.ascii	"app_debug\015\000"
+ 114      64656275 
+ 114      670D00
+ 115              		.section	.text.app_debug,"ax",%progbits
+ 116              		.align	1
+ 117              		.global	app_debug
+ 118              		.syntax unified
+ 119              		.thumb
+ 120              		.thumb_func
+ 122              	app_debug:
+ 123              	.LFB248:
+  26:APP/app.c     **** 
+  27:APP/app.c     **** void app_debug(void)
+  28:APP/app.c     **** {
+ 124              		.loc 1 28 1 is_stmt 1 view -0
+ 125              		.cfi_startproc
+ 126              		@ args = 0, pretend = 0, frame = 0
+ 127              		@ frame_needed = 0, uses_anonymous_args = 0
+ 128 0000 08B5     		push	{r3, lr}
+ 129              	.LCFI2:
+ 130              		.cfi_def_cfa_offset 8
+ 131              		.cfi_offset 3, -8
+ 132              		.cfi_offset 14, -4
+  29:APP/app.c     ****     bsp_voice_loop_process();
+ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3NFLhy.s 			page 4
+
+
+ 133              		.loc 1 29 5 view .LVU12
+ 134 0002 FFF7FEFF 		bl	bsp_voice_loop_process
+ 135              	.LVL5:
+  30:APP/app.c     ****     printf("app_debug\r\n");
+ 136              		.loc 1 30 5 view .LVU13
+ 137 0006 0248     		ldr	r0, .L11
+ 138 0008 FFF7FEFF 		bl	puts
+ 139              	.LVL6:
+  31:APP/app.c     **** }
+ 140              		.loc 1 31 1 is_stmt 0 view .LVU14
+ 141 000c 08BD     		pop	{r3, pc}
+ 142              	.L12:
+ 143 000e 00BF     		.align	2
+ 144              	.L11:
+ 145 0010 00000000 		.word	.LC2
+ 146              		.cfi_endproc
+ 147              	.LFE248:
+ 149              		.global	cmd
+ 150              		.section	.bss.cmd,"aw",%nobits
+ 151              		.align	2
+ 152              		.set	.LANCHOR0,. + 0
+ 155              	cmd:
+ 156 0000 00000000 		.space	4
+ 157              		.text
+ 158              	.Letext0:
+ 159              		.file 2 "e:\\ng_circumstance\\arm\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 160              		.file 3 "e:\\ng_circumstance\\arm\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 161              		.file 4 "frameworks/f407/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h"
+ 162              		.file 5 "frameworks/f407/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
+ 163              		.file 6 "frameworks/f407/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
+ 164              		.file 7 "frameworks/f407/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h"
+ 165              		.file 8 "frameworks/f407/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h"
+ 166              		.file 9 "hal_bsp/hal/driver/spi_oled/ax_oled_1305.h"
+ 167              		.file 10 "hal_bsp/hal/driver/remote/sbus_ht10a.h"
+ 168              		.file 11 "hal_bsp/hal/driver/buzzer/buzzer.h"
+ 169              		.file 12 "APP/robot_cmd.h"
+ 170              		.file 13 "frameworks/f407/Core/Inc/usart.h"
+ 171              		.file 14 "<built-in>"
+ARM GAS  C:\Users\honor\AppData\Local\Temp\cc3NFLhy.s 			page 5
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 app.c
-C:\Users\honor\AppData\Local\Temp\ccm1ihcd.s:20     .text.app_init:00000000 $t
-C:\Users\honor\AppData\Local\Temp\ccm1ihcd.s:26     .text.app_init:00000000 app_init
-C:\Users\honor\AppData\Local\Temp\ccm1ihcd.s:50     .text.app_loop:00000000 $t
-C:\Users\honor\AppData\Local\Temp\ccm1ihcd.s:56     .text.app_loop:00000000 app_loop
-C:\Users\honor\AppData\Local\Temp\ccm1ihcd.s:76     .text.app_debug:00000000 $t
-C:\Users\honor\AppData\Local\Temp\ccm1ihcd.s:82     .text.app_debug:00000000 app_debug
+C:\Users\honor\AppData\Local\Temp\cc3NFLhy.s:20     .rodata.app_init.str1.4:00000000 $d
+C:\Users\honor\AppData\Local\Temp\cc3NFLhy.s:30     .text.app_init:00000000 $t
+C:\Users\honor\AppData\Local\Temp\cc3NFLhy.s:36     .text.app_init:00000000 app_init
+C:\Users\honor\AppData\Local\Temp\cc3NFLhy.s:72     .text.app_init:00000020 $d
+C:\Users\honor\AppData\Local\Temp\cc3NFLhy.s:80     .text.app_loop:00000000 $t
+C:\Users\honor\AppData\Local\Temp\cc3NFLhy.s:86     .text.app_loop:00000000 app_loop
+C:\Users\honor\AppData\Local\Temp\cc3NFLhy.s:107    .text.app_loop:0000000c $d
+C:\Users\honor\AppData\Local\Temp\cc3NFLhy.s:112    .rodata.app_debug.str1.4:00000000 $d
+C:\Users\honor\AppData\Local\Temp\cc3NFLhy.s:116    .text.app_debug:00000000 $t
+C:\Users\honor\AppData\Local\Temp\cc3NFLhy.s:122    .text.app_debug:00000000 app_debug
+C:\Users\honor\AppData\Local\Temp\cc3NFLhy.s:145    .text.app_debug:00000010 $d
+C:\Users\honor\AppData\Local\Temp\cc3NFLhy.s:155    .bss.cmd:00000000 cmd
+C:\Users\honor\AppData\Local\Temp\cc3NFLhy.s:151    .bss.cmd:00000000 $d
 
 UNDEFINED SYMBOLS
 robot_cmd_init
-motor_init
+bsp_voice_init
+bsp_voice_send_msg
+puts
+huart3
 robot_cmd_update
+bsp_voice_loop_process

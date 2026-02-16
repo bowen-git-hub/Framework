@@ -166,11 +166,12 @@ void StartDefaultTask(void *argument)
 void StartTask02(void *argument)
 {
   /* USER CODE BEGIN StartTask02 */
+  osDelay(3000);
   /* Infinite loop */
   for(;;)
   {
     app_debug();
-    osDelay(1);
+    osDelay(10);
   }
   /* USER CODE END StartTask02 */
 }
@@ -188,6 +189,7 @@ void StartTask03(void *argument)
   /* Infinite loop */
   for(;;)
   {
+    
     osDelay(1);
   }
   /* USER CODE END StartTask03 */
