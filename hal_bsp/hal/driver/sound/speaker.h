@@ -1,5 +1,5 @@
-#ifndef _BSP_VOICE_H_
-#define _BSP_VOICE_H_
+#ifndef _SPEAKER_H_
+#define _SPEAKER_H_
 
 #include <stdbool.h>
 #include "stdint.h"

@@ -88,13 +88,16 @@ $(CORE_DIR)/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c
 
 C_SOURCES +=  \
 APP/app.c \
+APP/robot_cmd.c \
 hal_bsp/hal/hal.c \
 hal_bsp/bsp/bsp.c \
-APP/robot_cmd.c \
 hal_bsp/hal/driver/spi_oled/ax_oled_1305.c \
 hal_bsp/hal/driver/remote/sbus_ht10a.c \
 hal_bsp/hal/driver/motor/pwm_motor.c \
-hal_bsp/hal/driver/buzzer/buzzer.c 
+hal_bsp/hal/driver/motor/motor_encoder.c \
+hal_bsp/hal/driver/sound/buzzer.c \
+hal_bsp/hal/driver/sound/speaker.c \
+hal_bsp/hal/lib/battery_voltage/voltage.c
 
 
 # ASM sources
@@ -172,7 +175,8 @@ C_INCLUDES +=  \
 -Ihal_bsp/hal/driver/spi_oled \
 -Ihal_bsp/hal/driver/remote \
 -Ihal_bsp/hal/driver/motor \
--Ihal_bsp/hal/driver/buzzer
+-Ihal_bsp/hal/driver/sound \
+-Ihal_bsp/hal/lib/battery_voltage
 
 
 # compile gcc flags

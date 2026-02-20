@@ -1,6 +1,7 @@
-#include "buzzer.h"
+#include "speaker.h"
 #include "usart.h"
 #include "string.h"
+#include "stdio.h"
 
 // 语音消息队列（环形缓冲区）
 static VoiceQueue_t g_voice_queue;
@@ -47,7 +48,8 @@ bool bsp_voice_send_msg(const char* msg) {
     // 检查是否距离上次发送过1秒
     static uint32_t last_send_time = 0;
     
-    if (HAL_GetTick() - last_send_time < 1000) {
+    if (last_send_time != 0 && HAL_GetTick() - last_send_time < 1000) {
+        printf("false to send\n");
         return false;
     }
     last_send_time = HAL_GetTick();

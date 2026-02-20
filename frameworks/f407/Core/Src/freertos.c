@@ -26,6 +26,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "app.h"
+#include "hal.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -147,6 +148,8 @@ void MX_FREERTOS_Init(void) {
 void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
+  HAL_Layer_Init();
+  app_init();
   /* Infinite loop */
   for(;;)
   {
@@ -166,11 +169,10 @@ void StartDefaultTask(void *argument)
 void StartTask02(void *argument)
 {
   /* USER CODE BEGIN StartTask02 */
-  osDelay(3000);
   /* Infinite loop */
   for(;;)
   {
-    app_debug();
+    app_debug_loop();
     osDelay(10);
   }
   /* USER CODE END StartTask02 */
@@ -189,8 +191,8 @@ void StartTask03(void *argument)
   /* Infinite loop */
   for(;;)
   {
-    
-    osDelay(1);
+    HAL_Voice_loop();
+    osDelay(100);
   }
   /* USER CODE END StartTask03 */
 }
@@ -208,7 +210,8 @@ void StartTask04(void *argument)
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+    BSP_Wheel_Detect_Loop();       
+    osDelay(100);
   }
   /* USER CODE END StartTask04 */
 }
